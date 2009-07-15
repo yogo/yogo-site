@@ -31,6 +31,24 @@ h3 { color:#fff; font: 1.2em Arial, Sans-Serif; margin: 24px 0 0; }
 h3 a:hover { color:##46852F; }
 h4 { color: #808080; background: inherit; font-weight: normal; font-size: .9em; }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+img.left {
+	border: 0px;
+	margin: 5px;
+}
+
+img.right {
+	border: 0px;
+	margin: 5px;
+}
+
 #content { width: 900px; margin: 0 auto; }
 
 #logo { 
@@ -125,8 +143,6 @@ h4 { color: #808080; background: inherit; font-weight: normal; font-size: .9em; 
 	text-align: right;
 }
 
-
-
 #left { 
 	clear: left; 
 	float: left; 
@@ -167,7 +183,7 @@ h4 { color: #808080; background: inherit; font-weight: normal; font-size: .9em; 
 	background: #f4f4f4 url(images/noticebg.gif) no-repeat bottom right; 
 	border:1px dotted #808080; 
 }
-	
+
 #left a, #right a { background: #EFFCFF; color: #317486; }
 #left h3 { border-bottom: 1px solid #eee; padding: 0 0 7px; margin: 0 0 15px 0; }
 #right h2 { border-bottom: 1px solid #ccc; padding: 0 0 8px; }
