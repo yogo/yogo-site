@@ -8,7 +8,7 @@ filter:    erb
 <head>
 	<meta name="author" content="MSU CCB, adapted from Luka Cvrk (www.solucija.com)" />
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
-	<link rel="stylesheet" href="/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<title>Yogo :: {% if page.title %} {{ page.title }} {% else %} Yogo Data Management System {% endif %}</title>
 </head>
 <body>
@@ -32,7 +32,7 @@ filter:    erb
 			<li><a href="/contact.html">Contact</a></li>
 		</ul>
 		<div id="body-content">
-		{{ content }}
+		<%= @content %>
 		<div style="clear: both"></div>
 		</div>
 			

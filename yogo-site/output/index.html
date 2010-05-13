@@ -1,64 +1,74 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-   <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-   <title>Home Page</title>
-   <meta name="author" content="" />
-
-   <!--- Blueprint CSS Framework -->
-   <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
-   <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
-   <!--[if IE]>
-      <link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection">
-   <![endif]-->
-
-   <!-- CodeRay syntax highlighting CSS -->
-   <link rel="stylesheet" href="/css/coderay.css" type="text/css" />
-
-   <!-- Homepage CSS -->
-   <link rel="stylesheet" href="/css/site.css" type="text/css" media="screen, projection" />
+	<meta name="author" content="MSU CCB, adapted from Luka Cvrk (www.solucija.com)" />
+	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<title>Yogo :: {% if page.title %} {{ page.title }} {% else %} Yogo Data Management System {% endif %}</title>
 </head>
 <body>
+	<div id="content">
+		<div id="logo">
+			<a href="#"> <h3>
+				{% if page.title %}
+					{{ page.title }}
+				{% else %}
+					Yogo Data Management System
+				{% endif %}</h3></a>
+		</div>
+		<ul id="menu">
+			<li><a href="/">Home</a></li>
+			<li><a href="/Yogo/index.html">Yogo</a></li>
+			<li><a href="/Yogo/support.html">Yogo</a></li>
+		  <li><a href="/Yogo/documentation.html">Yogo</a></li>
+			<li><a href="/MIEN/index.html">MIEN</a></li>
+			<li><a href="/History.html">History</a></li>
+			<li><a href="/Partners/index.html">Partnerships</a></li>
+			<li><a href="/contact.html">Contact</a></li>
+		</ul>
+		<div id="body-content">
+		
+			<h2>Yogo Data Management System</h2><br>
+		
+			<p>The Yogo Data Management System is a set of software tools created to enhance the process of data annotation, analysis and web publication.</p>
+			
+			<p>The system provides a set of easy to use software tools for data sharing by the scientific community. It enables researchers to build their own custom designed data management systems. Another branch of the system provides tools for viewing anatomical and physiological data. </p> 
+			
+			<p>All tools created as part of the Yogo Data Management System are open source, and released under the <a href="http://www.opensource.org/licenses/mit-license.php" title="The MIT License:Licensing | Open Source Initiative" target="_blank">MIT license</a>.</p>
 
-<div class="container">
+			<h2></h2>
 
-   <div class="column span-20 prepend-2 append-2 first last" id="header">
-     <p class="title">A New Website</p>
-     <hr>
-   </div>
+			<p>The initial implementation of the software, simply called <a href="History.html"><strong>NeuroSys</strong></a>, allowed users to create XML databases. Centered on a Java-based client application, it provided a way to design and construct custom GUI screens for data entry, data query and retrieval.</p>
 
-   <div class="column span-15 prepend-2 first">
-      <p class="title">Home Page</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nunc congue ipsum vestibulum libero. Aenean vitae justo. Nam eget tellus. Etiam convallis, est eu lobortis mattis, lectus tellus tempus felis, a ultricies erat ipsum at metus.</p>
-<h2>Litora Sociis</h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi et risus. Aliquam nisl. Nulla facilisi. Cras accumsan vestibulum ante. Vestibulum sed tortor. Praesent tempus fringilla elit. Ut elit diam, sagittis in, nonummy in, gravida non, nunc. Ut orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nam egestas, orci eu imperdiet malesuada, nisl purus fringilla odio, quis commodo est orci vitae justo. Aliquam placerat odio tincidunt nulla. Cras in libero. Aenean rutrum, magna non tristique posuere, erat odio eleifend nisl, non convallis est tortor blandit ligula. Nulla id augue.</p>
-<blockquote>
-<p>Nullam mattis, odio ut tempus facilisis, metus nisl facilisis metus, auctor consectetuer felis ligula nec mauris. Vestibulum odio erat, fermentum at, commodo vitae, ultrices et, urna. Mauris vulputate, mi pulvinar sagittis condimentum, sem nulla aliquam velit, sed imperdiet mi purus eu magna. Nulla varius metus ut eros. Aenean aliquet magna eget orci. Class aptent taciti sociosqu ad litora.</p>
-</blockquote>
-<p>Vivamus euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse vel nibh ut turpis dictum sagittis. Aliquam vel velit a elit auctor sollicitudin. Nam vel dui vel neque lacinia pretium. Quisque nunc erat, venenatis id, volutpat ut, scelerisque sed, diam. Mauris ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec mattis. Morbi dignissim sollicitudin libero. Nulla lorem.</p>
-   </div>
+			<p>It also automatically created a controlled vocabulary and supported the extension and/or migration of that vocabulary to whatever standard might be chosen at a later date. Most importantly, it empowered end-users to carry out all of these operations without the expertise and expense of trained database programmers.</p>
+			
+			<p>Right now a transition is underway, converting NeuroSys into a web-based application called <a href="Yogo/index.html"><strong>Yogo</strong></a>. Yogo will retain all of functionality of NeuroSys, while adding new features. The new features will include automated data import from laboratory devices (such as microscopes and amplifiers), and a limited scope HTML editor to make data collections available on the web.</p> 
+			
+		  <p>Another component of the system is <a href="MIEN/index.html"><strong>MIEN</strong></a>, a suite of data visualization and analysis tools.  MIEN is intended for viewing anatomical and physiological data, and for annotating neuronal models.</p>
 
-   <div class="column span-5 append-2 last">
-      <h4>Sidebar</h4>
-      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras ornare mattis nunc. Mauris venenatis, pede sed aliquet vehicula, lectus tellus pulvinar neque, non cursus sem nisi vel augue. </p>
+			
 
-      <div class="box">
-         <p class="last">Mauris a lectus. Aliquam erat volutpat. Phasellus ultrices mi a sapien. Nunc rutrum egestas lorem. Duis ac sem sagittis elit tincidunt gravida.</p>
-      </div>
-
-      <p class="quiet">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras ornare mattis nunc. Mauris venenatis, pede sed aliquet vehicula, lectus tellus pulvinar neque, non cursus sem nisi vel augue.</p>
-
-      <h5>Incremental leading</h5>
-      <p class="incr">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras ornare mattis nunc. Mauris venenatis, pede sed aliquet vehicula, lectus tellus pulvinar neque, non cursus sem nisi vel augue. sed aliquet vehicula, lectus tellus.</p>
-   </div>
-
-   <div class="column span-20 prepend-2 append-2 first last" id="footer">
-     <hr />
-     <p>This website was created with <a href="http://webby.rubyforge.org">Webby</a></p>
-   </div>
-
-</div>
+		<div style="clear: both"></div>
+		</div>
+			
+		<div id="footer">
+			<div id="col1">
+			</div>
+			<div id="col2">
+			</div>
+			<div id="col3">
+			</div>
+		</div>	
+	</div>
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+			var pageTracker = _gat._getTracker("UA-9793379-1");
+			pageTracker._trackPageview();
+	} catch(err) {}</script>
 </body>
 </html>
