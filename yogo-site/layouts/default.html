@@ -8,13 +8,14 @@ filter:    erb
 <head>
 	<meta name="author" content="MSU CCB, adapted from Luka Cvrk (www.solucija.com)" />
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
-	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
 	<title>Yogo :: <% if @page.title %> <%= @page.title %> <% else %> Yogo Data Management System <% end %></title>
 </head>
 <body>
 	<div id="content">
 		<div id="logo">
 			<a href="#"> <h3>
+			  
 				<% if @page.title %>
 					<%= @page.title %>
 				<% else %>
@@ -24,13 +25,13 @@ filter:    erb
 		<ul id="menu">
 			<li><a href="/">Home</a></li>
 			<li><a href="/yogo/index.html">Yogo</a></li>
-			<li><a href="/yogo/support.html">Support</a></li>
+			<!-- <li><a href="/yogo/support.html">Support</a></li> -->
 			<li><a href="/mien/index.html">MIEN</a></li>
 			<li><a href="/history/history.html">History</a></li>
 			<li><a href="/partners/partners.html">Partnerships</a></li>
 			<li><a href="/contact.html">Contact</a></li>
 		</ul>
-		<div id="body-content">
+		<div id="body-content">  
 		<%= @content %>
 		<div style="clear: both"></div>
 		</div>
