@@ -1,6 +1,6 @@
 ---
 title: Yogo Data Management System
-extension: html
+extension: old
 filter:    erb
 layout: default
 ---
