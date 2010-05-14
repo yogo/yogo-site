@@ -6,10 +6,10 @@ filter:    erb
 
 <div id="post">
 	<h2><a href="{{ page.url }}">
-    {{ page.title }}
+    <%= @page.title %>
   </a></h2>
   <div id="date">published {{ page.date | date_to_string }}</div>
-  {{ content }}
+  <%= @content %>
   <hr />
   
 </div>
