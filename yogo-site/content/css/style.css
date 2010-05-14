@@ -2,6 +2,7 @@
 
 	author:   luka cvrk (www.solucija.com) 
 	adapted by: libbey white
+	extended by: chris jaeger
    
 */
 
@@ -221,3 +222,49 @@ img.right {
 	#col1 { float: left; width: 274px; padding: 7px 0 0 15px; margin: 0 0 10px; }
 	#col2 { float: left; width: 250px; border-left: 1px solid #ccc; padding: 7px 0 0 40px; }
 	#col3 { float: right; width: 250px; border-left: 1px solid #ccc; padding: 7px 0 0 40px; }
+	
+	
+	
+	
+	
+/*  --------  --------  --------  --------  --------  --------  --------  --------  --------*/
+
+
+#movie {
+  background-color:blue;
+  float:left;
+  height:169px;
+  margin-bottom:10px;
+  margin-right:10px;
+  width:300px;
+}
+
+#information {
+  width: 590px;
+  float: left;
+}
+
+#description {
+  
+}
+
+#download_buttons {
+  float:right;
+  height:125px;
+  margin-left:10px;
+  width:230px;
+}
+
+.button {
+  background-color:pink;
+  border:3px solid black;
+  display:block;
+  height:50px;
+  line-height:50px;
+  margin-bottom:5px;
+  text-align:center;
+}
+
+.button:hover {
+  border: 3px dashed red;
+}
