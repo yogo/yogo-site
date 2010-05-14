@@ -9,7 +9,7 @@ filter:    erb
 	<meta name="author" content="MSU CCB, adapted from Luka Cvrk (www.solucija.com)" />
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
-	<title>Yogo :: <% if @page.title %> <%= @page.title %> <% else %> Yogo Data Management System <% endif %></title>
+	<title>Yogo :: <% if @page.title %> <%= @page.title %> <% else %> Yogo Data Management System <% end %></title>
 </head>
 <body>
 	<div id="content">
@@ -19,7 +19,7 @@ filter:    erb
 					<%= @page.title %>
 				<% else %>
 					Yogo Data Management System
-				<% endif %></h3></a>
+				<% end %></h3></a>
 		</div>
 		<ul id="menu">
 			<li><a href="/">Home</a></li>
