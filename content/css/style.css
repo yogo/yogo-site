@@ -231,9 +231,9 @@ img.right {
 
 
 #movie {
-  background-color:blue;
+  background-color: #505050;
   float:left;
-  height:169px;
+  height:225px;
   margin-bottom:10px;
   margin-right:10px;
   width:300px;
@@ -252,11 +252,11 @@ img.right {
   float:right;
   height:125px;
   margin-left:10px;
-  width:230px;
+  width:220px;
 }
 
 .button {
-  background-color:pink;
+  background-color: #505050;
   border:3px solid black;
   display:block;
   height:50px;
@@ -267,4 +267,36 @@ img.right {
 
 .button:hover {
   border: 3px dashed red;
+}
+
+#top_container {
+  width: 900px;
+  height: 260px;
+}
+
+#bottom_container {
+  width: 900px;
+  height: 1000px;
+}
+
+#information_bar {
+  margin: auto;
+  width: 720px;
+  height: 60px;
+}
+
+.information_button {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 150px;
+  height: 60px;
+  background-color: #505050;
+}
+
+.information_button.first {
+  margin-left: 0px;
+}
+.information_button.last {
+  margin-right: 0px;
 }
