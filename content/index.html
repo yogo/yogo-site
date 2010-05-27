@@ -6,7 +6,7 @@ layout: default
 ---
 #intro
 #top_container
-  #movie
+  #movie Oh hi there! I will be a movie someday.
   #information
     #download_buttons
       %a.button(href='') download
@@ -18,8 +18,17 @@ layout: default
       %p All tools created as part of the Yogo Data Management System are open source, and released under the MIT license.
 #bottom_container
   #information_bar
-    .information_button.first
-    .information_button
-    .information_button
-    .information_button.last
-  
+    #button_1.information_button.first
+      The Core Data Modeling Module
+    #button_2.information_button
+    #button_3.information_button
+    #button_4.information_button.last
+  #information_window
+    #button_1_info
+      the core data modeling module provides the most novel parts of the Yogo software, namely version-controlled, user-designed data types. These data types provide the foundation for building user-designed systems, and they are constructed through an intuitive web-based tool that will eventually be available for on-line or off-line use.
+    #button_2_info
+      the data annotation module provides the ability for end users to annotate their data models and collected data. The annotations can either be free-form or selected from a given set of ontological choices specified by the principal investigator. The novel aspect of data annotation in this data annotation module is a tool to allow users to evolve free-form annotations or tags into a structured vocabulary. This tool uses statistical analysis of the tags to create suggested structures that the end user can customize and save as vocabularies.
+    #button_3_info
+      the data publishing module provides the ability for users who have created projects with data collections to select parts of the data collection to be published online. The module provides some "semi-automated" publishing capabilities that include standard templates. However, the user can override the provided templates to provide a project specific look and feel, and the user can customize the semi-automated process, taking full control of all the options used to publish data.
+    #button_4_info
+      included in the Yogo software are a set of modules that are not directly related to the functionality described in the other modules. These additional modules include user management, role-based access controls, authentication integration, automatic data collection interfaces (for interfacing to devices that produce data automatically), and storage management modules. These modules are necessary to build the platform that Yogo leverages to deliver its unique functionality, and it is in the best interest of our project to offer these modules to the broader community so they don't have to be built again.

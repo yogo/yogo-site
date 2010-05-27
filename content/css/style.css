@@ -29,7 +29,7 @@ h1 a { color: #fff; background: inherit; }
 h1 a:hover { color: #E4FFD3; background: inherit; }
 h2 { font: bold 1.4em Arial, Sans-Serif; margin: 0 0 12px; }
 h3 { color:#fff; font: 1.2em Arial, Sans-Serif; margin: 24px 0 0; }
-h3 a:hover { color:##46852F; }
+h3 a:hover { color: #46852F; }
 h4 { color: #808080; background: inherit; font-weight: normal; font-size: .9em; }
 
 .left {
@@ -237,6 +237,7 @@ img.right {
   margin-bottom:10px;
   margin-right:10px;
   width:300px;
+  color: #C8C8C8;
 }
 
 #information {
@@ -263,6 +264,7 @@ img.right {
   line-height:50px;
   margin-bottom:5px;
   text-align:center;
+  color: #C8C8C8;
 }
 
 .button:hover {
@@ -271,7 +273,7 @@ img.right {
 
 #top_container {
   width: 900px;
-  height: 260px;
+  height: 275px;
 }
 
 #bottom_container {
@@ -290,13 +292,50 @@ img.right {
   margin-left: 20px;
   margin-right: 20px;
   width: 150px;
-  height: 60px;
+  height: 55px;
   background-color: #505050;
 }
 
 .information_button.first {
   margin-left: 0px;
+  color: white;
 }
 .information_button.last {
   margin-right: 0px;
+}
+
+#information_window {
+  width: 900px;
+  height: 400px;
+  margin-top: 10px;
+  background-color: #505050;
+  padding: 10px;
+}
+
+#button_1_info {
+  display: block;
+  height: 400px;
+  width: 900px;
+  color: white;
+}
+
+#button_2_info {
+  display: none;
+  height: 400px;
+  width: 900px;
+  color: white;
+}
+
+#button_3_info {
+  display: none;
+  height: 400px;
+  width: 900px;
+  color: white;
+}
+
+#button_4_info {
+  display: none;
+  height: 400px;
+  width: 900px;
+  color: white;
 }
