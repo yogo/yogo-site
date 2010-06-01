@@ -244,6 +244,8 @@ img.right {
 #information {
   width: 590px;
   float: left;
+  display: block;
+  
 }
 
 #description {
@@ -274,7 +276,9 @@ img.right {
 
 #top_container {
   width: 900px;
-  height: 275px;
+  height: 260px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 15px;
 }
 
 #bottom_container {
@@ -294,12 +298,12 @@ img.right {
   margin-right: 20px;
   width: 150px;
   height: 55px;
+  color: white;
   background-color: #505050;
 }
 
 .information_button.first {
   margin-left: 0px;
-  color: white;
 }
 .information_button.last {
   margin-right: 0px;
