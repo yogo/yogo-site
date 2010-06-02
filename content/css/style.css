@@ -236,13 +236,15 @@ img.right {
   float:left;
   height:225px;
   margin-bottom:10px;
-  margin-right:10px;
-  width:300px;
+  margin-right:35px;
+  width:200px;
   color: #C8C8C8;
 }
 
 #information {
+  border-left: 1px solid #ccc;
   width: 590px;
+  padding-left: 35px;
   float: left;
   display: block;
   
@@ -256,7 +258,7 @@ img.right {
   float:right;
   height:125px;
   margin-left:10px;
-  width:220px;
+  width:145px;
 }
 
 .button {
@@ -313,7 +315,6 @@ img.right {
   width: 900px;
   height: 400px;
   margin-top: 10px;
-  background-color: #505050;
   padding: 10px;
 }
 
@@ -321,26 +322,31 @@ img.right {
   display: block;
   height: 400px;
   width: 900px;
-  color: white;
+
+  border: 1px solid black;
 }
 
 #button_2_info {
   display: none;
   height: 400px;
   width: 900px;
-  color: white;
+
+  border: 1px solid black;
+  
 }
 
 #button_3_info {
   display: none;
   height: 400px;
   width: 900px;
-  color: white;
+
+  border: 1px solid black;
 }
 
 #button_4_info {
   display: none;
   height: 400px;
   width: 900px;
-  color: white;
+
+  border: 1px solid black;
 }

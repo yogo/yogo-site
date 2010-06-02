@@ -20,8 +20,8 @@ $(document).ready(function(){
 });
 
 function all_off(){
-  $('#button_1_info').fadeOut();
-  $('#button_2_info').fadeOut();
-  $('#button_3_info').fadeOut();
-  $('#button_4_info').fadeOut();
+  $('#button_1_info').hide();
+  $('#button_2_info').hide();
+  $('#button_3_info').hide();
+  $('#button_4_info').hide();
 }
