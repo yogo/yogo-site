@@ -1,14 +1,17 @@
 ---
 extension: html
-filter:    erb
+filter:    
+  - erb
+  - basepath
 ---
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+  <base href="http://web.cns.montana.edu/yogo-test/" />
 	<meta name="author" content="MSU CCB, adapted from Luka Cvrk (www.solucija.com)" />
 	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
-	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<script src="javascripts/jquery-1.4.2.min.js" type="text/javascript"></script>
 	<script src="javascripts/application.js" type="text/javascript"></script>
 	<title>Yogo :: <% if @page.title %> <%= @page.title %> <% else %> Yogo Data Management System <% end %></title>
@@ -25,11 +28,11 @@ filter:    erb
 		</div>
 		<ul id="menu">
 			<li><a href="/">Home</a></li>
-			<!-- <li><a href="/yogo/support.html">Support</a></li> -->
-			<li><a href="/mien/index.html">MIEN</a></li>
-			<li><a href="/history/history.html">History</a></li>
-			<li><a href="/partners/partners.html">Partnerships</a></li>
-			<li><a href="/contact.html">Contact</a></li>
+
+			<li><a href="mien/index.html">MIEN</a></li>
+			<li><a href="history/history.html">History</a></li>
+			<li><a href="partners/partners.html">Partnerships</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 		<div id="body-content">  
 		<%= @content %>

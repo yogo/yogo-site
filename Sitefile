@@ -4,4 +4,6 @@ task :default => :build
 desc 'deploy the site to the webserver'
 task :deploy => [:build, 'deploy:rsync']
 
+SITE.base = 'http://web.cns.montana.edu/yogo-test'
+
 # EOF
