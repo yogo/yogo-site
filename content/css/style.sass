@@ -1,0 +1,360 @@
+---
+layout: none
+extension: css
+filter: sass
+---
+
+// *	author:   luka cvrk (www.solucija.com) 
+// *	adapted by: libbey white
+// *	
+// *	then chris jaeger put some rubbish at the bottom
+// *  then pol sassified it
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font: .74em  	Verdana, Arial, "Trebuchet MS", Tahoma, sans-serif
+  line-height: 1.6em
+  background: white url(../images/bg.gif) repeat-x
+  color: #444
+  min-width: 1000px
+
+a
+  color: #317486
+  background: inherit
+  text-decoration: none
+  &:hover
+    color: #808080
+    background: inherit
+
+p
+  margin: 0 0 15px 0
+
+h1
+  color: #FEFFD8
+  font: bold 1.2em Arial, Sans-Serif
+  margin: 24px 0 0
+
+h2
+  font: bold 1.4em Arial, Sans-Serif
+  margin: 0 0 12px
+
+h3
+  font: bold 1.3em Arial, Sans-Serif
+  margin: 0 0 12px
+
+h4
+  color: #808080
+  background: inherit
+  font-weight: normal
+  font-size: .9em
+
+.left
+  float: left
+
+.right
+  float: right
+
+img
+  &.left, &.right
+    border: 0px
+    margin: 5px
+
+#content
+  width: 900px
+  margin: 0 auto
+
+#logo
+  color: #fff
+  margin: 10px 0 0 0
+  height: 66px
+  width: 240px
+  float: left
+  background: url(../images/logobg.gif) no-repeat bottom
+  text-align: center
+
+#menu
+  float: right
+  padding: 40px 0 0
+  margin: 0 0 17px
+  li
+    font-size: 1.1em
+    display: inline
+    a
+      padding: 30px 8px 0px 0
+      margin: 0 0 0 50px
+      color: #ccc
+      background: #505050 url(../images/tab.gif) no-repeat right bottom
+      &:hover
+        background: #505050 url(../images/tabhover.gif) no-repeat right bottom
+        color: #FEFFB8
+
+#intro
+  clear: both
+  background: white url(../images/intro.jpg) no-repeat
+  color: #4C8734
+  height: 170px
+  margin: 0 0 20px
+  padding: 45px 40px 0 0
+  text-align: right
+  h1, p
+    margin: 0
+
+#login
+  font-size: .9em
+  margin: 82px 0 0
+  a
+    color: #fff
+    background: #8BE1FA
+    padding: 4px 20px 6px
+    &:hover
+      color: #fff
+      background: #8be1fa url(../images/loginhover.gif) no-repeat
+
+#intro_y
+  clear: both
+  background: white url(../images/intro_y.jpg) no-repeat
+  color: #4C8734
+  height: 170px
+  margin: 0 0 20px
+  padding: 45px 40px 0 0
+  text-align: right
+
+#intro_m
+  clear: both
+  background: white url(../images/intro_m.jpg) no-repeat
+  color: #4C8734
+  height: 170px
+  margin: 0 0 20px
+  padding: 45px 40px 0 0
+  text-align: right
+
+#intro_c
+  clear: both
+  background: white url(../images/intro_c.jpg) no-repeat
+  color: #4C8734
+  height: 170px
+  margin: 0 0 20px
+  padding: 45px 40px 0 0
+  text-align: right
+
+#intro_p
+  clear: both
+  background: white url(../images/intro_p.jpg) no-repeat
+  color: #4C8734
+  height: 170px
+  margin: 0 0 20px
+  padding: 45px 40px 0 0
+  text-align: right
+
+#intro_h
+  clear: both
+  background: white url(../images/intro_h.jpg) no-repeat
+  color: #4C8734
+  height: 170px
+  margin: 0 0 20px
+  padding: 45px 40px 0 0
+  text-align: right
+
+#left
+  clear: left
+  float: left
+  width: 240px
+  padding: 0 34px 0 1em
+  font-size: .9em
+  margin: 0 0 15px
+
+#leftmenu
+  list-style: none
+  margin: 0 0 20px 0
+  li
+    padding: 0 0 0 12px
+    background: white url(../images/bullet.gif) no-repeat center left
+    color: #46852F
+    a
+      background: #EAFFE3
+      color: #317486
+      /*background: #EAFFE3; color: #46852F;
+
+#right
+  margin: 0 15px 20px 0
+  padding: 0 0 0 35px
+  border-left: 1px solid #ccc
+  /*float: right;
+  float: left
+  width: 560px
+  text-align: justify
+
+#notice
+  padding: 12px 14px 1px
+  background: #f4f4f4 url(../images/noticebg.gif) no-repeat bottom right
+  color: #808080
+
+#m-notice
+  padding: 12px 14px 1px
+  background: #f4f4f4 url(../images/noticebg.gif) no-repeat bottom right
+  border: 1px dotted #808080
+
+#left a, #right a
+  background: #EFFCFF
+  color: #317486
+
+#left h3
+  border-bottom: 1px solid #eee
+  padding: 0 0 7px
+  margin: 0 0 15px 0
+
+#right
+  h2
+    border-bottom: 1px solid #ccc
+    padding: 0 0 8px
+  li
+    font-size: .9em
+    padding: 0 0 6px 12px
+    color: #336699
+    list-style-type: none
+    text-align: left
+
+#special li
+  background: white url(../images/rbullet.gif) no-repeat top left
+
+#center
+  clear: left
+  float: left
+  width: 600px
+  padding: 0 34px 0 70px
+  margin: 0 0 15px
+
+#footer
+  clear: both
+  border-top: 1px solid #ccc
+  padding: 10px 0
+  margin: 0 0 15px
+  font-size: .9em
+  color: #808080
+  background: #fff
+  a
+    color: #4CA031
+    background: #fff
+
+#col1
+  float: left
+  width: 274px
+  padding: 7px 0 0 15px
+  margin: 0 0 10px
+
+#col2
+  float: left
+  width: 250px
+  border-left: 1px solid #ccc
+  padding: 7px 0 0 40px
+
+#col3
+  float: right
+  width: 250px
+  border-left: 1px solid #ccc
+  padding: 7px 0 0 40px
+
+/*  --------  --------  --------  --------  --------  --------  --------  --------  --------
+
+#movie
+  background-color: #505050
+  float: left
+  height: 225px
+  margin-bottom: 10px
+  margin-right: 35px
+  width: 200px
+  color: #C8C8C8
+
+#information
+  border-left: 1px solid #ccc
+  width: 590px
+  padding-left: 35px
+  float: left
+  display: block
+
+#download_buttons
+  float: right
+  height: 125px
+  margin-left: 10px
+  width: 145px
+
+.button
+  background-color: #505050
+  border: 3px solid black
+  display: block
+  height: 50px
+  line-height: 50px
+  margin-bottom: 5px
+  text-align: center
+  color: #C8C8C8
+  &:hover
+    border: 3px dashed red
+
+#top_container
+  width: 900px
+  height: 260px
+  border-bottom: 1px solid #ccc
+  margin-bottom: 15px
+
+#bottom_container
+  width: 900px
+  height: 1000px
+
+#information_bar
+  margin: auto
+  width: 720px
+  height: 60px
+
+.information_button
+  float: left
+  margin-left: 20px
+  margin-right: 20px
+  width: 150px
+  height: 55px
+  color: white
+  background-color: #505050
+  &.first
+    margin-left: 0px
+  &.last
+    margin-right: 0px
+
+#information_window
+  width: 900px
+  height: 400px
+  margin-top: 10px
+  padding: 10px
+
+#button_1_info
+  display: block
+  height: 400px
+  width: 900px
+  border: 1px solid black
+
+#button_2_info, #button_3_info, #button_4_info
+  display: none
+  height: 400px
+  width: 900px
+  border: 1px solid black
+
+#history-page
+  margin-bottom: 4em
+
+#page-links
+  .next
+    text-align: right
+    float: right
+    width: 150px
+  .previous
+    width: 150px
+    float: left
+  .top
+    text-align: center
+
+.keyword
+  font-weight: bold
+
+blockquote
+  padding-left: 4em
