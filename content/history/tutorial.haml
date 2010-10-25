@@ -3,25 +3,18 @@ layout: manual
 filter: haml
 ---
 %h2 Tutorial
-%br/
-%table{:width => "100%"}
-  %tr
-    %td{:align => "left", :valign => "top", :width => "80%"}
-      The following pages present information in tutorial format, demonstrating
-      how to log in, create custom data entry and data
-      query forms, and use those forms to create and query a database. Section Three
-      below presents more detailed definitions, descriptions and applications of
-      widgets.
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "search.html"} Previous page
-    /
-      <td  align="center">
-      <a href="">Return to top of page</A></td>
-    %td{:align => "right"}
-      %a{:href => "login.html"} Next page
+
+#history-page
+  %p
+    The following pages present information in tutorial format, demonstrating how to log in, 
+    create custom data entry and data query forms, and use those forms to create and query a 
+    database. Section Three below presents more detailed definitions, descriptions and 
+    applications of widgets.
+
+#page-links
+  .previous
+    %a{:href => "search.html"} Previous page
+  .next
+    %a{:href => "login.html"} Next page
+  .top
+    /%a{:href => "search.html"} Return to top of page

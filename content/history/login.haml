@@ -3,42 +3,31 @@ layout: manual
 filter: haml
 ---
 %h2 Logging In
-%br/
-%p
-  The internet-accessible link that points to the NeuroSys database leads, as a first step, to a login screen.
-  There the user is prompted for a name and password before actually connecting to the database.
-%br/
-%br/
-%img{:alt => "Login", :src => "images/login.jpg", :title => "Login"}/
-%br/
-%br/
-The name and password combination you use must already exist in the database before
-you can log in. If you are not currently registered, you can log in to a sample database
-with username "guest" and password "guest."
-%br/
-%br/
-After logging in, the NeuroSys screen appears (see below). By default it opens in
-%span{:style => "font-weight: bold;"} Browse
-mode. Click on a folder in the left
-pane to view its contents in the right pane.
-%br/
-%br/
-You may also click on a single file name to view a text description of that file in the
-box below the main Browse window.
-%br/
-%br/
-%img{:alt => "Browse mode", :src => "images/Browse_files_displayed.jpg", :title => "Browse mode"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "tutorial.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "login.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "tabs.html"} Next page
+
+#history-page
+  %p
+    The internet-accessible link that points to the NeuroSys database leads, as a first step, to a login screen.
+    There the user is prompted for a name and password before actually connecting to the database.
+  %img{:alt => "Login", :src => "/images/history/login.jpg", :title => "Login"}/
+  %p
+    The name and password combination you use must already exist in the database before
+    you can log in. If you are not currently registered, you can log in to a sample database
+    with username "guest" and password "guest."
+  %p
+    After logging in, the NeuroSys screen appears (see below). By default it opens in
+    %span.keyword Browse
+    mode. Click on a folder in the left
+    pane to view its contents in the right pane.
+  %p
+    You may also click on a single file name to view a text description of that file in the
+    box below the main Browse window.
+  %img{:alt => "Browse mode", :src => "/images/history/Browse_files_displayed.jpg", :title => "Browse mode"}/
+
+#page-links
+  .previous
+    %a{:href => "tutorial.html"} Previous page
+  .next
+    %a{:href => "tabs.html"} Next page
+  .top
+    %a{:href => "login.html"} Return to top of page
+

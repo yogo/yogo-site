@@ -4,92 +4,56 @@ filter: haml
 ---
 
 %h2 Designing a data form
-%br/
-%br/
-Designing a data form takes place under the
-%strong Create Form
-tab.
-%br/
-%br/
-The icons along the top represent the different types of
-%strong widgets
-that can be added to a form.
-%br/
-%br/
-%div{:style => "margin-left: 40px;"}
-  A widget is a data editing
-  element.  Each widget has certain characteristics
-  %br/
-  which control its look and behavior during data entry.  There are two
-  %br/
-  general categories of widgets: containers and first-level widgets.  Containers
-  %br/
-  contain other widgets, either additional containers and/or first-level widgets.
-  %br/
-  This allows you to design forms with arbitrary hierarchical nesting.
-  %br/
-%br/
-If you click on one of the icons, that type of widget will be added to the
-form.  You can then use drag and drop to move widgets around within the form.
-%br/
-%br/
-%img{:alt => "Create Form", :src => "images/Create_Form_blank.jpg", :title => "Create Form"}/
-%br/
-%br/
-%br/
-To start this form, we clicked the banner widget
-icon (circled in red), and changed the label to
-= succeed "." do
-  %strong BIRDS OF NORTH AMERICA
-%br/
-%br/
-The other fields are created the same way.
-%br/
-%br/
-%img{:alt => "Banner added", :src => "images/Create_Form_banner2.jpg", :title => "Banner added"}/
-%br/
-%br/
-%br/
-At this point a text field
-widget, re-named
-= succeed "," do
-  %span{:style => "color: rgb(51, 153, 51);font-weight: bold;"} email address
-has just been
-added.  (By default widgets are added to the end of the
-form.)
-%br/
-%br/
-You can "grab" the
-%span{:style => "color: rgb(51, 153, 51);font-weight: bold;"} email address
-field and drag it into the
-%span{:style => "color: rgb(51, 153, 51);font-weight: bold;"} Contributor
-container widget, as shown below.
-%br/
-%br/
-When all of the desired fields have been added, saving this form
-will create a Template.
-%br/
-%br/
-%br/
-%img{:alt => "form before drag to tree", :src => "images/Create_Form_contrib1.jpg", :title => "form before drag to tree"}/
-%br/
-%br/
-%br/
-%br/
-%img{:alt => "form after drag to tree", :src => "images/Create_Form_contrib2.jpg", :title => "form after drag to tree"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "demo.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "form.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "search.html"} Next page
+#history-page
+  %p
+    Designing a data form takes place under the
+    %span.keyword Create Form 
+    tab.
+  %p
+    The icons along the top represent the different types of
+    %span.keyword widgets
+    that can be added to a form.
 
+  %blockquote
+    A widget is a data editing
+    element.  Each widget has certain characteristics
+    which control its look and behavior during data entry.  There are two
+    general categories of widgets: containers and first-level widgets.  Containers
+    contain other widgets, either additional containers and/or first-level widgets.
+    This allows you to design forms with arbitrary hierarchical nesting.
+  %p
+    If you click on one of the icons, that type of widget will be added to the
+    form.  You can then use drag and drop to move widgets around within the form.
+  %img{:alt => "Create Form", :src => "/images/history/Create_Form_blank.jpg", :title => "Create Form"}/
+  %p
+    To start this form, we clicked the banner widget
+    icon (circled in red), and changed the label to
+    = succeed "." do
+      %span.keyword BIRDS OF NORTH AMERICA
+  %p The other fields are created the same way.
+  %img{:alt => "Banner added", :src => "/images/history/Create_Form_banner2.jpg", :title => "Banner added"}/
+  %p
+    At this point a text field widget, re-named
+    = succeed "," do
+      %span.neurosys-field email address
+    has just been added.  (By default widgets are added to the end of the form.)
+  %p
+    You can "grab" the
+    %span.neurosys-field email address
+    field and drag it into the
+    %span.neurosys-field Contributor
+    container widget, as shown below.
+  %p
+    When all of the desired fields have been added, saving this form
+    will create a Template.
+  %img{:alt => "form before drag to tree", :src => "/images/history/Create_Form_contrib1.jpg", :title => "form before drag to tree"}/
+  %img{:alt => "form after drag to tree", :src => "/images/history/Create_Form_contrib2.jpg", :title => "form after drag to tree"}/
+
+
+#page-links
+  .previous
+    %a{:href => "demo.html"} Previous page
+  .next
+    %a{:href => "search.html"} Next page
+  .top
+    %a{:href => "form.html"} Return to top of page

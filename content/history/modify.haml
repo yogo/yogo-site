@@ -3,70 +3,52 @@ layout: manual
 filter: haml
 ---
 %h2 Modifying Existing Templates
-%br/
-Another way to create a new template is to use parts of existing ones, or to modify existing
-ones. This can be accomplished under the
-%span{:style => "font-weight: bold;"} Create Form
-tab as well.
-%br/
-%br/
-This time, we will use the "Templates" pane on the right. Click on the pull-down menu in that
-pane, and select the template we just made. You may also want to resize the panes by
-dragging the bar in between them.
-%br/
-%br/
-%img{:src => "images/Create_Form_template.jpg"}/
-%br/
-%br/
-%img{:src => "images/Create_Form_template2.jpg"}/
-%br/
-%br/
-You can use as much or as little of the existing template as you need. For example, if you want all
-the same "Identifiers" information to be recorded in your new database, you can drag over
-the entire "Identifiers" tree, as shown below:
-%br/
-%br/
-%img{:src => "images/Create_Form_template3.jpg"}/
-%br/
-%br/
-This is a very useful feature that translates into rapid generation of custom data forms,
-all without the help of a programmer.
-%br/
-%br/
-If you just want to modify an existing template slightly, you can select "Open" from the
-File menu, and the entire template will appear in the left pane. There you can add or
-delete widgets. (To delete a widget, right-click on it and choose "Delete"
-from the menu that appears.)
-%br/
-%br/
-At this point an important distinction needs to be made-- if you make changes to an existing
-template and then select "Save As" from the File menu and give it a new name, you will be
-starting a new data collection based on the new template.  If, however, you make changes
-to the template and save it with the
-= succeed "," do
-  %i same name
-you will also change
-%b
-  all of the
-  existing data forms
-that were created with that template.
-%br/
-%br/
-%img{:src => "images/Create_Form_template4.jpg"}/
-%br/
-%br/
-%img{:src => "images/Create_Form_template5.jpg"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "start.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "modify.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "nesting.html"} Next page
+#history-page
+  %p
+    Another way to create a new template is to use parts of existing ones, or to modify existing
+    ones. This can be accomplished under the
+    %span.keyword Create Form
+    tab as well.
+  %p
+    This time, we will use the "Templates" pane on the right. Click on the pull-down menu in that
+    pane, and select the template we just made. You may also want to resize the panes by
+    dragging the bar in between them.
+  %img{:src => "/images/history/Create_Form_template.jpg"}/
+  %img{:src => "/images/history/Create_Form_template2.jpg"}/
+  %p
+    You can use as much or as little of the existing template as you need. For example, if you want all
+    the same "Identifiers" information to be recorded in your new database, you can drag over
+    the entire "Identifiers" tree, as shown below:
+  %img{:src => "/images/history/Create_Form_template3.jpg"}/
+  %p
+    This is a very useful feature that translates into rapid generation of custom data forms,
+    all without the help of a programmer.
+  %p
+    If you just want to modify an existing template slightly, you can select "Open" from the
+    File menu, and the entire template will appear in the left pane. There you can add or
+    delete widgets. (To delete a widget, right-click on it and choose "Delete"
+    from the menu that appears.)
+  %p
+    At this point an important distinction needs to be made-- if you make changes to an existing
+    template and then select "Save As" from the File menu and give it a new name, you will be
+    starting a new data collection based on the new template.  If, however, you make changes
+    to the template and save it with the
+    = succeed "," do
+      %span.note same name
+    you will also change
+    %span.note
+      all of the
+      existing data forms
+    that were created with that template.
+  %img{:src => "/images/history/Create_Form_template4.jpg"}/
+  %img{:src => "/images/history/Create_Form_template5.jpg"}/
+
+
+
+#page-links
+  .previous
+    %a{:href => "start.html"} Previous page
+  .next
+    %a{:href => "nesting.html"} Next page
+  .top
+    %a{:href => "modify.html"} Return to top of page

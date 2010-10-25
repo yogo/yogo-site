@@ -3,116 +3,84 @@ layout: manual
 filter: haml
 ---
 %h2 Searching the Database
-%br/
-%br/
-Under the
-%strong Search
-tab, there are two options for searching.
-The first, a basic keyword search, works like Google or other search engines you may be
-familiar with.
-%br/
-%br/
-%img{:alt => "Search Tab", :src => "images/Basic_search_blank.jpg", :title => "Search Tab"}/
-%br/
-%br/
-The
-%strong Custom Search
-screen is divided into two panes.
-The left pane contains the data fields you are searching over.  These fields are selected
-from all of the available data fields, which will be shown in the right pane.
-%br/
-%br/
-%img{:alt => "Custom Search", :src => "images/Custom_search_1.jpg", :title => "Custom Search"}/
-%br/
-%br/
-In order to choose the data fields you want to search over, you'll need to select
-a
-%strong Template
-from the drop-down menu in the
-right pane.  In the example below, we chose the template called "Birds_test_1."
-%br/
-%br/
-%img{:alt => "Custom Search with template", :src => "images/Custom_search_2.jpg", :title => "Custom Search with template"}/
-%br/
-%br/
-Now the data fields in the template on the right can be dragged over to the
-"Search Terms" pane on the left.
-%br/
-%br/
-In the example below, the fields "Contributor Name" and the bird species "Common name"
-have been dragged over to the left, and the pane has been resized by sliding the
-bar in the middle.
-%br/
-%br/
-Note that the XML path that acts as a unique address for each data field appears
-above it when it is dragged over to the left pane.  This helps to illustrate the power
-of custom searches in NeuroSys, as the system allows the user to search values
-associated with just one particular path. If this weren't the case, searching for "Name"
-and "Smith" would return values for both birds and investigators whose name contained
-the value "Smith."
-%br/
-%br/
-%img{:alt => "Custom Search with two fields", :src => "images/Custom_search_two_fields.jpg", :title => "Custom Search with two fields"}/
-%br/
-%br/
-It is now possible to enter the terms you would like to search for in the database.
-If you don't remember, for instance, the contributor's name you are looking for, clicking
-the
-%strong Vocab
-button will show you what values
-exist in the database.  This is another feature that makes NeuroSys extremely useful,
-especially in promoting the use of a controlled vocabulary.
-%br/
-%br/
-Be sure to change the value "equals" to "contains" if you do not choose a value from
-the vocabulary list.
-%br/
-%br/
-%img{:alt => "Custom Search vocab", :src => "images/Custom_search_vocab.jpg", :title => "Custom Search vocab"}/
-%br/
-%br/
-After entering the terms you wish to search for (in this example, "Kay Beckett" and "Grebe"),
-clicking the
-%strong Run Search
-button in the lower right will
-run the search and return the following dialog:
-%br/
-%br/
-%img{:alt => "Custom Search dialog", :src => "images/Custom_search_dialog.jpg", :title => "Custom Search dialog"}/
-%br/
-%br/
-If you click the
-%strong Display
-button, you will see the list
-of data forms that matched your search criteria displayed under the
-%strong Results
-tab (shown below).
-%br/
-%br/
-You can then select a form to open in
-%strong Browse
-or
-%strong Enter Data
-mode.
-%br/
-%br/
-The custom search we just built can also be saved for future use.
-%br/
-%br/
-%img{:alt => "Custom Search results", :src => "images/Cust_search_results2.jpg", :title => "Custom Search results"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "form.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "search.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "tutorial.html"} Next page
+
+#history-page
+  %p
+    Under the
+    %span.keyword Search
+    tab, there are two options for searching.
+    The first, a basic keyword search, works like Google or other search engines you may be
+    familiar with.
+  %img{:alt => "Search Tab", :src => "/images/history/Basic_search_blank.jpg", :title => "Search Tab"}/
+  %p
+    The
+    %span.keyword Custom Search
+    screen is divided into two panes.
+    The left pane contains the data fields you are searching over.  These fields are selected
+    from all of the available data fields, which will be shown in the right pane.
+  %img{:alt => "Custom Search", :src => "/images/history/Custom_search_1.jpg", :title => "Custom Search"}/
+  %p
+    In order to choose the data fields you want to search over, you'll need to select
+    a
+    %span.keyword Template
+    from the drop-down menu in the
+    right pane.  In the example below, we chose the template called "Birds_test_1."
+  %img{:alt => "Custom Search with template", :src => "/images/history/Custom_search_2.jpg", :title => "Custom Search with template"}/
+  %p
+    Now the data fields in the template on the right can be dragged over to the
+    "Search Terms" pane on the left.
+  %p
+    In the example below, the fields "Contributor Name" and the bird species "Common name"
+    have been dragged over to the left, and the pane has been resized by sliding the
+    bar in the middle.
+  %p
+    Note that the XML path that acts as a unique address for each data field appears
+    above it when it is dragged over to the left pane.  This helps to illustrate the power
+    of custom searches in NeuroSys, as the system allows the user to search values
+    associated with just one particular path. If this weren't the case, searching for "Name"
+    and "Smith" would return values for both birds and investigators whose name contained
+    the value "Smith."
+  %img{:alt => "Custom Search with two fields", :src => "/images/history/Custom_search_two_fields.jpg", :title => "Custom Search with two fields"}/
+  %p
+    It is now possible to enter the terms you would like to search for in the database.
+    If you don't remember, for instance, the contributor's name you are looking for, clicking
+    the
+    %span.keyword Vocab
+    button will show you what values
+    exist in the database.  This is another feature that makes NeuroSys extremely useful,
+    especially in promoting the use of a controlled vocabulary.
+  %p
+    Be sure to change the value "equals" to "contains" if you do not choose a value from
+    the vocabulary list.
+  %img{:alt => "Custom Search vocab", :src => "/images/history/Custom_search_vocab.jpg", :title => "Custom Search vocab"}/
+  %p
+    After entering the terms you wish to search for (in this example, "Kay Beckett" and "Grebe"),
+    clicking the
+    %span.keyword Run Search
+    button in the lower right will
+    run the search and return the following dialog:
+  %img{:alt => "Custom Search dialog", :src => "/images/history/Custom_search_dialog.jpg", :title => "Custom Search dialog"}/
+  %p
+    If you click the
+    %span.keyword Display
+    button, you will see the list of data forms that matched your search criteria displayed under the
+    %span.keyword Results
+    tab (shown below).
+  %p
+    You can then select a form to open in
+    %span.keyword Browse
+    or
+    %span.keyword Enter Data
+    mode.
+
+  %p The custom search we just built can also be saved for future use.
+  %img{:alt => "Custom Search results", :src => "/images/history/Cust_search_results2.jpg", :title => "Custom Search results"}/
+
+#page-links
+  .previous
+    %a{:href => "form.html"} Previous page
+  .next
+    %a{:href => "tutorial.html"} Next page
+  .top
+    %a{:href => "search.html"} Return to top of page
+        
