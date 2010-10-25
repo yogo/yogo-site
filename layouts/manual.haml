@@ -1,0 +1,9 @@
+---
+layout: default
+filter: haml
+---
+#intro_h
+#left= render :partial => "includes/manual_nav"
+#right
+  = @content 
+  %div{:style => "clear: both"}

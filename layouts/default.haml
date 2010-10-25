@@ -1,0 +1,47 @@
+---
+extension: html
+filter: haml
+---
+
+!!! Strict
+%html{:xmlns => "http://www.w3.org/1999/xhtml"}
+  %head
+    %meta{:content => "MSU CCB, adapted from Luka Cvrk (www.solucija.com)", :name => "author"}/
+    %meta{:content => "text/html;charset=iso-8859-1", "http-equiv" => "content-type"}/
+    %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
+    %script{:src => "/javascripts/jquery-1.4.2.min.js", :type => "text/javascript"}
+    %script{:src => "/javascripts/application.js", :type => "text/javascript"}
+    %title= "Yogo :: " + (@page.title ? @page.title : "Yogo Data Management Framework")
+  %body
+    #content
+      #logo
+        %a{:href => "#"}
+          %h3= (@page.title ? @page.title : "Yogo Data Management Framework")
+      %ul#menu
+        %li
+          %a{:href => "/"} Home
+        %li
+          %a{:href => "/yogo/index.html"} Yogo
+        %li
+          %a{:href => "/mien/index.html"} MIEN
+        %li
+          %a{:href => "/history/history.html"} History
+        %li
+          %a{:href => "/partners/partners.html"} Partnerships
+        %li
+          %a{:href => "/contact.html"} Contact
+      #body-content
+        = @content
+        %div{:style => "clear: both"}
+      #footer
+        #col1
+        #col2
+        #col3
+    :javascript
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      try {
+        var pageTracker = _gat._getTracker("UA-9793379-1");
+        pageTracker._trackPageview();
+      } catch(err) {}
+
