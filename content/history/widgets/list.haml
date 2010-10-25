@@ -3,63 +3,43 @@ layout: manual
 filter: haml
 ---
 %h2 List widget
-The list widget is similar to the standard pull-down widget, but it allows the user to
-select multiple, simultaneous values. The list widget can also be thought of as a collection
-of checkboxes, where the value
-for each checkbox is either true (selected) or false (not selected).
-%br/
-%br/
-To select more than one item in a list, control-click (or command-click on the Mac) the items
-you wish to select. In this example, Montana, Tennessee and Oklahoma have been selected
-as true.
-%br/
-%br/
-%b Example:
-%br/
-%img{:src => "images/list_ex.jpg"}/
-%br/
-%br/
-In the Create Form tab, click on the list widget icon in the toolbar.
-%br/
-%br/
-%img{:src => "images/list.jpg"}/
-%br/
-%br/
-The list widget appears with a default name.
-%br/
-%br/
-%img{:src => "images/lst1.jpg"}/
-%br/
-%br/
-Double click on the name to change it to an appropriate name for your list.
-%br/
-%br/
-%img{:src => "images/lst2.jpg"}/
-%br/
-%br/
-Click on the "Add new item" button to add items to the list. In the dialog box that
-appears, enter the name of the item you would like to appear in the list.
-%br/
-%br/
-%img{:src => "images/lst3.jpg"}/
-%br/
-%br/
-You may continue adding items here in Create Form mode, and you may also add to the list
-later, in Enter Data mode.
-%br/
-%br/
-%img{:src => "images/lst4.jpg"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "checkbox.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "list.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "value.html"} Next page
+#history-page
+  %p
+    The list widget is similar to the standard pull-down widget, but it allows the user to
+    select multiple, simultaneous values. The list widget can also be thought of as a collection
+    of checkboxes, where the value
+    for each checkbox is either true (selected) or false (not selected).
+  %p
+    To select more than one item in a list, control-click (or command-click on the Mac) the items
+    you wish to select. In this example, Montana, Tennessee and Oklahoma have been selected
+    as true.
+
+  %h3 Example:
+  %img{:src => "/images/history/widgets/list_ex.jpg"}/
+
+  %p In the Create Form tab, click on the list widget icon in the toolbar.
+  %img{:src => "/images/history/widgets/list.jpg"}/
+
+  %p The list widget appears with a default name.
+  %img{:src => "/images/history/widgets/lst1.jpg"}/
+
+  %p Double click on the name to change it to an appropriate name for your list.
+  %img{:src => "/images/history/widgets/lst2.jpg"}/
+
+  %p
+    Click on the "Add new item" button to add items to the list. In the dialog box that
+    appears, enter the name of the item you would like to appear in the list.
+  %img{:src => "/images/history/widgets/lst3.jpg"}/
+
+  %p
+    You may continue adding items here in Create Form mode, and you may also add to the list
+    later, in Enter Data mode.
+  %img{:src => "/images/history/widgets/lst4.jpg"}/
+
+#page-links
+  .previous
+    %a{:href => "checkbox.html"} Previous page
+  .next
+    %a{:href => "value.html"} Next page
+  .top
+    %a{:href => "list.html"} Return to top of page

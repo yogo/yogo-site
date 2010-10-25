@@ -3,65 +3,39 @@ layout: manual
 filter: haml
 ---
 %h2 Banner widget
-The banner widget allows you to give your data form a title. Banners are not
-saved as searchable text, however.
-%br/
-%br/
-%b Example:
-%br/
-%img{:src => "images/banner_ex.jpg"}/
-%br/
-%br/
-In the Create Form tab, click the banner widget icon in the toolbar.
-%br/
-%br/
-%img{:src => "images/banner.jpg"}/
-%br/
-%br/
-You will be presented with three choices for the size of your banner.
-%br/
-%br/
-%img{:src => "images/banner2.jpg"}/
-%br/
-%br/
-Select the size you wish to use. This is what the sizes will look like in
-your form:
-%br/
-%br/
-%img{:src => "images/banner_sizes.jpg"}/
-%br/
-%br/
-For this example, we selected "Biggest." The banner widget appears with a default
-name.
-%br/
-%br/
-%img{:src => "images/bnr1.jpg"}/
-%br/
-%br/
-Double click on the default name to enter the title you wish to use.
-%br/
-%br/
-%img{:src => "images/bnr2.jpg"}/
-%br/
-%br/
-%img{:src => "images/bnr3.jpg"}/
-%br/
-%br/
-You could also use a combination of banner sizes, as shown here:
-%br/
-%br/
-%img{:src => "images/bnr4.jpg"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "url.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "banner.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "checkbox.html"} Next page
+#history-page
+  %p
+    The banner widget allows you to give your data form a title. Banners are not
+    saved as searchable text, however.
+
+  %h3 Example:
+  %img{:src => "/images/history/widgets/banner_ex.jpg"}/
+
+  %p In the Create Form tab, click the banner widget icon in the toolbar.
+  %img{:src => "/images/history/widgets/banner.jpg"}/
+
+  %p You will be presented with three choices for the size of your banner.
+  %img{:src => "/images/history/widgets/banner2.jpg"}/
+
+  %p
+    Select the size you wish to use. This is what the sizes will look like in
+    your form:
+  %img{:src => "/images/history/widgets/banner_sizes.jpg"}/
+
+  %p For this example, we selected "Biggest." The banner widget appears with a default name.
+  %img{:src => "/images/history/widgets/bnr1.jpg"}/
+
+  %p Double click on the default name to enter the title you wish to use.
+  %img{:src => "/images/history/widgets/bnr2.jpg"}/
+  %img{:src => "/images/history/widgets/bnr3.jpg"}/
+
+  %p You could also use a combination of banner sizes, as shown here:
+  %img{:src => "/images/history/widgets/bnr4.jpg"}/
+
+#page-links
+  .previous
+    %a{:href => "url.html"} Previous page
+  .next
+    %a{:href => "checkbox.html"} Next page
+  .top
+    %a{:href => "banner.html"} Return to top of page

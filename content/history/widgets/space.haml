@@ -3,47 +3,35 @@ layout: manual
 filter: haml
 ---
 %h2 Vertical space widget
-The vertical space widget provides a way to increase the amount of vertical
-space between other widgets in the data form. For instance, in
-the image below, there is a vertical space widget in between the text field labeled
-"above" and the text field labeled "below." The vertical space widget itself is not
-visible-- it simply creates the space between the other widgets.
-%br/
-%br/
-%img{:src => "images/verticalspace_ex.jpg"}/
-%br/
-%br/
-In the Create Form tab, click on the vertical space widget icon in the toolbar.
-%br/
-%br/
-%img{:src => "images/verticalspace.jpg"}/
-%br/
-%br/
-The vertical space widget appears. It contains two buttons in a box.
-%br/
-%br/
-%img{:src => "images/vs1.jpg"}/
-%br/
-%br/
-Drag the vertical space widget between whichever widgets you want to separate.
-Click the right arrow to expand the vertical space. Click the left arrow to
-collapse the vertical space.
-The vertical space widget will be invisible in Enter Data or Browse mode,
-but the vertical space you created remains.
-%br/
-%br/
-%img{:src => "images/vs2.jpg"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "date.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "space.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "image.html"} Next page
+#history-page
+  %p
+    The vertical space widget provides a way to increase the amount of vertical
+    space between other widgets in the data form. For instance, in
+    the image below, there is a vertical space widget in between the text field labeled
+    "above" and the text field labeled "below." The vertical space widget itself is not
+    visible-- it simply creates the space between the other widgets.
+
+  %h3 Example
+  %img{:src => "/images/history/widgets/verticalspace_ex.jpg"}/
+
+  %p In the Create Form tab, click on the vertical space widget icon in the toolbar.
+  %img{:src => "/images/history/widgets/verticalspace.jpg"}/
+
+  %p The vertical space widget appears. It contains two buttons in a box.
+  %img{:src => "/images/history/widgets/vs1.jpg"}/
+
+  %p
+    Drag the vertical space widget between whichever widgets you want to separate.
+    Click the right arrow to expand the vertical space. Click the left arrow to
+    collapse the vertical space.
+    The vertical space widget will be invisible in Enter Data or Browse mode,
+    but the vertical space you created remains.
+  %img{:src => "/images/history/widgets/vs2.jpg"}/
+
+#page-links
+  .previous
+    %a{:href => "date.html"} Previous page
+  .next
+    %a{:href => "image.html"} Next page
+  .top
+    %a{:href => "space.html"} Return to top of page
