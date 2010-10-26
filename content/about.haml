@@ -1,0 +1,65 @@
+---
+layout:   default
+filter:   haml
+title:    About
+---
+#intro_c
+#left
+  = render :partial => "includes/about"
+  = render :partial => "includes/contactus"
+#right
+  = render :partial => "includes/team"
+  %h2
+    %a.anchor{:name => "#collaborators"}Collaborators    
+  %p These collaborators are working with different Yogo applications. They provide valuable user feedback, and are essential for the testing, extension and refinement of our software.
+  %ul 
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Burns"}>Gully Burns
+      %span.affiliation, University of Southern California
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Fastnow"}>Christina Fastnow
+      %span.affiliation, Montana State University
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Hughes"}>Thom Hughes
+      %span.affiliation, Montana State University
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Ascoli"}>Giorgio Ascoli
+      %span.affiliation, George Mason University
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Brinkley"}>Jim Brinkley
+      %span.affiliation, University of Washington
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Martone"}>Maryann Martone
+      %span.affiliation, University of California at San Diego
+
+  %br
+  %strong Past Collaborators
+  %ul
+    %li.person 
+      %span.name>
+        %a{:href => "/collaborators.html#Garnsey"}>Bridget Garnsey
+      %span.affiliation, Bridger Informatics
+    %li.person 
+      %span.name>Cali Morrison
+      %span.affiliation, Transparency By Design
+  %br
+  %h2 
+    %a.anchor{:name => "#publications"}Publications
+  %strong Papers
+  %ol
+    %li	S. Pittendrigh and G. Jacobs, "Neurosys," Neuroinformatics, vol. 1, pp. 167-176, 2003.
+  %strong Posters
+  %ol
+    %li C. Jeager, P. Llovet, L. White, R. Heimbuch, B. Livingood, A. Kontgas, I. Judson, and G. Jacobs. "Acheta domestica: Access to Neurophysiology-Biomechanics and Neuron Reeconstruction Data via Ruby on Rails Web Site," Complex Biological Systems Summer Undergraduate Research Program, Montana State University, Bozeman, 2008. 
+    %li G.A. Jacobs, I.R. Judson, P. Llovet, L.K. White, R. Heimbuch, B. Livingood, and C.A. Jeager. "Managing Data with NeuroSys and the Yogo Data Management Toolkit," Neuroscience 2008, Chicago, 2008.
+    %li G.A. Jacobs, P. Llovet, I. Judson, L. White, R. Heimbuch, C. Jeager and G.A Burns. "MILO: A general purpose data repository for disease foundations and individual laboratories," Neuroscience 2009, Chicago, 2009.  
+    
+%div{:style => "clear: both"}
+  
+  

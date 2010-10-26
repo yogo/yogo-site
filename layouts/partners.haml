@@ -4,23 +4,8 @@ filter: haml
 ---
 #intro_p
 #left
-  %strong Related sites:
-  %br/
-  %ul#leftmenu
-    %li
-      %a{:href => "http://neurogateway.org", :target => "_blank"} Neuroscience Information Network
-    %li
-      %a{:href => "http://ndg.sfn.org/", :target => "_blank"} Neuroscience Database Gateway
-    %li
-      %a{:href => "http://neuroscienceblueprint.nih.gov/", :target => "_blank"} NIH Blueprint for Neuroscience Research
-    %li
-      %a{:href => "http://silkroute.cs.washington.edu/", :target => "_blank"} SilkRoute II (relational publishing to XML)
-    %li
-      %a{:href => "http://www.w3.org/TR/xquery/", :target => "_blank"} XQuery
-    %li
-      %a{:href => "http://www.w3.org/TR/owl-features/", :target => "_blank"} OWL Web Ontology overview
-    %li
-      %a{:href => "http://www.mysql.com/", :target => "_blank"} MySQL
+  = render :partial => "includes/relatedsites"
+  = render :partial => "includes/relatedtechnology"
 #right
   = @content
   %div{:style => "clear: both"}

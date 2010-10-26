@@ -166,17 +166,15 @@ img
   font-size: .9em
   margin: 0 0 15px
 
-#leftmenu
-  list-style: none
+ul#leftmenu
   margin: 0 0 20px 0
+  padding-left: 15px
   li
-    padding: 0 0 0 12px
-    background: white url(../images/bullet.gif) no-repeat center left
+    list-style: url(../images/bullet.gif) outside
     color: #46852F
     a
       background: #EAFFE3
       color: #317486
-      /*background: #EAFFE3; color: #46852F;
 
 #right
   margin: 0 15px 20px 0
@@ -201,11 +199,23 @@ img
   background: #EFFCFF
   color: #317486
 
-#left h3
-  border-bottom: 1px solid #eee
-  padding: 0 0 7px
-  margin: 0 0 15px 0
+#left 
+  h3
+    border-bottom: 1px solid #eee
+    padding: 0 0 7px
+    margin: 0 0 15px 0
+  li 
+    list-style-type: none
+    text-align: left
+    padding-left: 6px
 
+.anchor
+  background: #FFF         !important
+  color: #444              !important
+  
+.funding
+  padding-left: 10px       !important
+  
 #right
   h2
     border-bottom: 1px solid #ccc
@@ -217,8 +227,23 @@ img
     list-style-type: none
     text-align: left
 
+.person
+  padding: 0px              !important
+
+.name
+  font-size: 1.1em
+  // font-weight: bold
+
+.title
+  font-size: 1.1em
+
+.affiliation
+  font-size: 1.1em
+  font-style: italic
+
 #special li
   background: white url(../images/rbullet.gif) no-repeat top left
+  padding-right: 3px
 
 #center
   clear: left

@@ -1,0 +1,28 @@
+---
+layout: default
+filter: haml
+title:  Documentation
+---
+#intro_h
+#left
+  %ul#leftmenu
+    %li 
+      %a{:href => "/history/index.html"}History of Yogo
+    Applications Using Yogo API's:
+    %li 
+      %a{:href => "/mien/index.html"} MIEN
+    %li
+      %a{:href => "#Sapphire"}Sapphire Documentation
+    %li
+      %a{:href => "#Developer"}Developer Documentation
+  = render :partial => "includes/support"
+  = render :partial => "includes/contactus"
+#right
+%h2 Yogo Documentation
+%strong 
+  %a.anchor{:name => "Sapphire"}Sapphire Documentation
+  = render :partial => "includes/sapphiredocs"
+%br/
+%strong 
+  %a.anchor{:name => "Developer"}Developer Documentation
+  = render :partial => "includes/developerdocs"
