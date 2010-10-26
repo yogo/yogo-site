@@ -4,32 +4,23 @@ filter: haml
 ---
 
 %h2 Deleting forms
-%br/
-%p
-  In Browse mode, deleting forms is possible. For this to be accomplished,
-  the name of the form to be deleted has to be showing in the right
-  pane. Right click on the form you wish to delete. Select the delete option
-  from the list that appears.
-%img{:src => "/images/widgets/form_delete1.jpg"}/
-%br/
-%br/
-%p
-  A small verification dialog box will appear asking if it is OK to delete
-  the file. Click the "OK" button to delete the form.
-%img{:src => "/images/widgets/form_delete2.jpg"}/
-%br/
-%br/
-%br/
-%br/
-%br/
-%br/
-%table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-  %tr
-    %td{:align => "left"}
-      %a{:href => "deleteWidget.html"} Previous page
-    %td{:align => "center"}
-      %a{:href => "deleteForm.html"} Return to top of page
-    %td{:align => "right"}
-      %a{:href => "glossary.html"} Next page
+#history-page
+  %p
+    In Browse mode, deleting forms is possible. For this to be accomplished,
+    the name of the form to be deleted has to be showing in the right
+    pane. Right click on the form you wish to delete. Select the delete option
+    from the list that appears.
+  %img{:src => "/images/history/form_delete1.jpg"}/
+  %p
+    A small verification dialog box will appear asking if it is OK to delete
+    the file. Click the "OK" button to delete the form.
+  %img{:src => "/images/history/form_delete2.jpg"}/
 
 
+#page-links
+  .previous
+    %a{:href => "deleteWidget.html"} Previous page
+  .next
+    %a{:href => "glossary.html"} Next page
+  .top
+    %a{:href => "deleteForm.html"} Return to top of page
