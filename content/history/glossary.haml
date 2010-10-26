@@ -3,485 +3,376 @@ layout: manual
 filter: haml
 ---
 
-%table{:width => "100%"}
-  %tr
-    %td{:align => "left", :valign => "top", :width => "80%"}
-      %h2 Appendix A: Glossary
-      %p
-        %br/
-        / listing of alphabet to jump to
-        %a{:href => "glossary.html#A"} A
-        / a href="#B"
-        B
-        %a{:href => "glossary.html#C"} C
-        %a{:href => "glossary.html#D"} D
-        / a href="#E"
-        E
-        %a{:href => "glossary.html#F"} F
-        %a{:href => "glossary.html#G"} G
-        %a{:href => "glossary.html#H"} H
-        / a href="#I"
-        I
-        %a{:href => "glossary.html#J"} J
-        / a href="#K"
-        K
-        %a{:href => "glossary.html#L"} L
-        %a{:href => "glossary.html#M"} M
-        %a{:href => "glossary.html#N"} N
-        / a href="O"
-        O
-        %a{:href => "glossary.html#P"} P
-        %a{:href => "glossary.html#Q"} Q
-        %a{:href => "glossary.html#R"} R
-        %a{:href => "glossary.html#S"} S
-        %a{:href => "glossary.html#T"} T
-        %a{:href => "glossary.html#U"} U
-        / a href="#V"
-        V
-        %a{:href => "glossary.html#W"} W
-        %a{:href => "glossary.html#X"} X
-        / a href="#Y"
-        Y
-        / a href="#Z"
-        Z
-        %br/
-        %br/
-        %br/
-      %ul
-        / A
-      %a{:name => "A"}/
-      %h2 A
-      %br/
-      %a{:name => "ancestor"}
-        %b Ancestor Node
-      %li
-        An ancestor of a node is one that is a
-        = succeed "," do
-          %a{:href => "glossary.html#parent"} parent
-        grandparent,
-        great-grandparent, or a more removed grandparent.  See
-        = succeed "." do
-          %a{:href => "glossary.html#tree"} Trees
-        %br/
-        %br/
-        %br/
-        %br/
-        / C
-        %a{:name => "C"}/
-        %h2 C
-        %br/
-        %a{:name => "ccb"}
-          %b CCB
-        %li
-          The
-          %a{:href => "http://cns.montana.edu"} Center for Computational Biology
-          is located
-          at
-          = succeed "." do
-            %a{:href => "http://www.montana.edu"} Montana State University
-          %br/
-          %br/
-          %a{:name => "child"}
-            %b Child Node
-          %li
-            Nodes can have branches leading to other nodes, called child nodes.
-            See
-            %a{:href => "glossary.html#tree"} Tree
-            and
-            = succeed "." do
-              %a{:href => "glossary.html#parent"} Parent Node
-            %br/
-            %br/
-            %a{:name => "client"}
-              %b Client
-            %li
-              A computer that uses a network to make requests to a
-              = succeed "." do
-                %a{:href => "glossary.html#server"} server
-              %br/
-              %br/
-              %a{:name => "containerWidget"}
-                %b Container Widget
-              %li
-                A widget that can have other widgets placed inside of it.
-                %br/
-                %br/
-                %br/
-                %br/
-                / D
-                %a{:name => "D"}/
-                %h2 D
-                %br/
-                %a{:name => "descendant"}
-                  %b Descendant Node
-                %li
-                  A descendant of a node is one that is a
-                  = succeed "," do
-                    %a{:href => "glossary.html#child"} child
-                  grandchild,
-                  great-grandchild or a more removed -grandchild.  See
-                  = succeed "." do
-                    %a{:href => "glossary.html#tree"} Trees
-                  %br/
-                  %br/
-                  %br/
-                  %br/
-                  / F
-                  %a{:name => "F"}/
-                  %h2 F
-                  %br/
-                  %a{:name => "ftp"}
-                    %b FTP
-                  %li
-                    File Transfer Protocol. A very common method of moving files between two Internet sites.  There are many Internet sites that
-                    have established publicly accessible repositories of material that can be obtained using FTP, by logging
-                    in using the account name "anonymous", thus these sites are called "anonymous ftp servers".
-                    %br/
-                    %br/
-                    %br/
-                    %br/
-                    / G
-                    %a{:name => "G"}/
-                    %h2 G
-                    %br/
-                    %a{:name => "grayed"}
-                      %b Grayed Out
-                    %li
-                      Options that are unable to be selected or chosen.
-                      %br/
-                      %br/
-                      %a{:name => "group"}
-                        %b Group
-                      %li
-                        Groups are the top level of the hierarchy used to organize data forms. Under
-                        each group, the next level is the types of experiments performed in that particular group (lab).
-                        The next level is the names of the researchers who have done experiments.
-                        %br/
-                        %br/
-                        %br/
-                        %br/
-                        / H
-                        %a{:name => "H"}/
-                        %h2 H
-                        %br/
-                        %a{:name => "host"}
-                          %b Host
-                        %li
-                          Any computer on a
-                          %a{:href => "glossary.html#network"} network
-                          that is a repository for services
-                          available to other computers on the network. It is quite common to have one host machine provide
-                          several services, such as SMTP (email) and HTTP (web).
-                          %br/
-                          %br/
-                          %a{:name => "http"}
-                            %b HTTP -
-                          %a{:href => "glossary.html#hypertext"} HyperText
-                          Transfer Protocol
-                          %li
-                            The protocol for moving hypertext files across the Internet. Requires an HTTP client program on one
-                            end, and an HTTP server program on the other end. HTTP is the most important protocol used in the
-                            World Wide Web (WWW).
-                            %br/
-                            %br/
-                            %a{:name => "hypertext"}
-                              %b Hypertext
-                            %li
-                              Generally, any text that contains links to other documents - words or phrases in the document
-                              that can be chosen by a reader and which cause another document to be retrieved and displayed.
-                              %br/
-                              %br/
-                              %br/
-                              %br/
-                              / I
-                              %br/
-                              %br/
-                              / j
-                              %a{:name => "J"}/
-                              %h2 J
-                              %br/
-                              %a{:name => "jxta"}
-                                %b JXTA
-                              %li
-                                JXTA provides the
-                                %a{:href => "glossary.html#protocol"} protocols
-                                for basic functions
-                                of peer-to-peer networking, such as creating, finding, joining, leaving	and monitoring groups,
-                                talking to other groups and peers, and sharing content and services.
-                                %br/
-                                %br/
-                                %br/
-                                %br/
-                                / L
-                                %a{:name => "L"}/
-                                %h2 L
-                                %br/
-                                %a{:name => "label"}
-                                  %b Label
-                                %li
-                                  A general word or name describing data.
-                                  %br/
-                                  %br/
-                                  %a{:name => "leaf"}
-                                    %b Leaf Node
-                                  %li
-                                    Leaf nodes are
-                                    %a{:href => "glossary.html#tree"} tree
-                                    nodes that do not have branches.  Leaf
-                                    nodes cannot have
-                                    %a{:href => "glossary.html#child"} child
-                                    nodes.
-                                    %br/
-                                    %br/
-                                    %br/
-                                    %br/
-                                    / M
-                                    %a{:name => "M"}/
-                                    %h2 M
-                                    %br/
-                                    %a{:name => "metadata"}
-                                      %b Meta-data
-                                    %li
-                                      This is secondary data that describes primary data.  It answers questions about data.
-                                      Ex. The name of the person who took a barometric reading, where the barometric reading is
-                                      the primary data.
-                                      %br/
-                                      %br/
-                                      %a{:name => "mode"}
-                                        %b Mode
-                                      %li
-                                        There are four modes of viewing that can
-                                        be utilized: Browse, Enter Data, Search, and Create Form. Modes are navigated between by selecting the
-                                        appropriate tab.  Each mode allows for different viewing options and user operations.
-                                        %br/
-                                        %br/
-                                        %br/
-                                        %br/
-                                        / N
-                                        %a{:name => "N"}/
-                                        %h2 N
-                                        %br/
-                                        %a{:name => "node"}
-                                          %b Node
-                                        %li
-                                          A node represents a piece of data in an organizational
-                                          = succeed "." do
-                                            %a{:href => "glossary.html#tree"} tree
-                                          %br/
-                                          %br/
-                                          %br/
-                                          %br/
-                                          / P
-                                          %a{:name => "P"}/
-                                          %h2 P
-                                          %br/
-                                          %a{:name => "parent"}
-                                            %b Parent Node
-                                          %li
-                                            The parent of a
-                                            %a{:href => "glossary.html#child"} child
-                                            node, is the node that has a branch to a
-                                            leaf or child.  See
-                                            = succeed "." do
-                                              %a{:href => "glossary.html#tree"} Tree
-                                            %br/
-                                            %br/
-                                            %a{:name => "path"}
-                                              %b Path
-                                            %li
-                                              The route to a folder or a file. It consists of the disk drive name, a folder and/or subfolder
-                                              (if any) and the filename. For example: c:/window/programs/fallderah.exe.
-                                              %br/
-                                              %br/
-                                              %a{:name => "protocol"}
-                                                %b Protocol
-                                              %li
-                                                A specification that tells how computers will talk to each other. By standardizing protocols,
-                                                computers with different operating systems can communicate.
-                                                %br/
-                                                %br/
-                                                %a{:name => "popup"}
-                                                  %b Pop-up
-                                                %li
-                                                  A small window that appears on top of another window.
-                                                  %br/
-                                                  %br/
-                                                  %br/
-                                                  %br/
-                                                  / Q
-                                                  %a{:name => "Q"}/
-                                                  %h2 Q
-                                                  %br/
-                                                  %a{:name => "query"}
-                                                    %b Query
-                                                  %li
-                                                    A request sent to a database to retrieve information.  These requests can range from simple
-                                                    searches to complicated cross correlations.
-                                                    %br/
-                                                    %br/
-                                                    %br/
-                                                    %br/
-                                                    / R
-                                                    %a{:name => "R"}/
-                                                    %h2 R
-                                                    %br/
-                                                    %a{:name => "relational"}
-                                                      %b Relational Database
-                                                    %li
-                                                      A database with tables that must be rigidly defined before the data can be entered, and whose
-                                                      relationships among its records are based on common fields.
-                                                      %br/
-                                                      %br/
-                                                      %a{:name => "root"}
-                                                        %b Root Node
-                                                      %li
-                                                        The root node is the
-                                                        %a{:href => "glossary.html#tree"} tree
-                                                        node that has no branches leading
-                                                        to it from other nodes.  A root has no
-                                                        %a{:href => "glossary.html#parent"} parent
-                                                        node.  The root
-                                                        is usually used as the label for whole tree.
-                                                        %br/
-                                                        %br/
-                                                        %br/
-                                                        %br/
-                                                        / S
-                                                        %a{:name => "S"}/
-                                                        %h2 S
-                                                        %br/
-                                                        %a{:name => "server"}
-                                                          %b Server
-                                                        %li
-                                                          A computer that handles requests from any
-                                                          %a{:href => "glossary.html#client"} client
-                                                          machines
-                                                          on a network.  Clients can request web sites, data from databases, files, and mail.
-                                                          %br/
-                                                          %br/
-                                                          %br/
-                                                          %br/
-                                                          / T
-                                                          %a{:name => "T"}/
-                                                          %h2 T
-                                                          %br/
-                                                          %a{:name => "template"}
-                                                            %b Template
-                                                          %li
-                                                            A template is the master data form for a set of experiments. Specific data forms that
-                                                            contain data are created by filling out templates.  Templates do not contain data, only
-                                                            the organizational structure for the widgets that will be filled out during data collection.
-                                                            %br/
-                                                            %br/
-                                                            %a{:name => "tree"}
-                                                              %b Tree
-                                                            %li
-                                                              A structure for organizing data that is composed of nodes and branches.  Each node represents a piece of information.  Nodes
-                                                              can have branches leading to other nodes.  One node is labeled the root node.  The
-                                                              %a{:href => "glossary.html#root"} root
-                                                              has no branches leading to it from other nodes.  The root is
-                                                              usually used as the label for whole tree.
-                                                              %a{:href => "glossary.html#interior"}
-                                                              %a{:href => "glossary.html#leaf"} Leaf
-                                                              nodes are nodes that do not have
-                                                              branches.
-                                                              %br/
-                                                              %br/
-                                                              %br/
-                                                              %br/
-                                                              / V
-                                                              %a{:name => "U"}/
-                                                              %h2 U
-                                                              %br/
-                                                              %a{:name => "url"}
-                                                                %b URL
-                                                              %li
-                                                                A URL is the address of a computer or a document on the Internet that consists of a communications
-                                                                protocol followed by a colon and two slashes (as http://), the identifier of a computer and usually a path
-                                                                through a directory to a file -- called also uniform resource locator, universal resource locator.
-                                                                %br/
-                                                                %br/
-                                                                %br/
-                                                                %br/
-                                                                / W
-                                                                %a{:name => "W"}/
-                                                                %h2 W
-                                                                %br/
-                                                                %a{:name => "widget"}
-                                                                  %b Widget
-                                                                %br/
-                                                                %li
-                                                                  Widgets are the organizational elements used in data forms and are
-                                                                  analogous to the
-                                                                  %a{:href => "glossary.html#node"} nodes
-                                                                  in an organizational
-                                                                  = succeed "." do
-                                                                    %a{:href => "glossary.html#tree"} tree
-                                                                  Users are allowed to add and delete widgets.  Since most data
-                                                                  has a natural hierarchy of importance, widgets can be used as categories that contain other widgets.
-                                                                  %br/
-                                                                  %br/
-                                                                  %br/
-                                                                  %br/
-                                                                  / X
-                                                                  %a{:name => "X"}/
-                                                                  %h2 X
-                                                                  %br/
-                                                                  %a{:name => "xml"}
-                                                                    %b XML
-                                                                  %li
-                                                                    E
-                                                                    %b> x
-                                                                    tensible
-                                                                    = succeed "arkup" do
-                                                                      %b M
-                                                                    = succeed "anguage" do
-                                                                      %b L
-                                                                    is a flexible language for data that makes possible the
-                                                                    sharing of data between	systems and programs.
-                                                                    %br/
-                                                                    %br/
-                                                                    %a{:name => "xsil"}
-                                                                      %b XSIL
-                                                                    %li
-                                                                      E
-                                                                      %b> x
-                                                                      tensible
-                                                                      = succeed "cientific" do
-                                                                        %b S
-                                                                      = succeed "nterchange" do
-                                                                        %b I
-                                                                      = succeed "anguage" do
-                                                                        %b L
-                                                                      is the specific
-                                                                      %a{:href => "glossary.html#xml"} XML
-                                                                      language used by the data forms.  The language was
-                                                                      developed by the
-                                                                      = succeed "." do
-                                                                        %a{:href => "http://www.cacr.caltech.edu"}
-                                                                          California Institute
-                                                                          of Technology's Center for Advanced Computing Research
-                                                                      For more details read the
-                                                                      = succeed "." do
-                                                                        %a{:href => "http://www.cacr.caltech.edu/SDA/xsil/"}
-                                                                          XSIL: Extensible Scientific Interchange
-                                                                          Language
-                                                                      %br/
-                                                                      %br/
-                                                                      %br/
-                                                                      %br/
-                                                                      %br/
-                                                                      %br/
-                                                                      %br/
-                                                                      %br/
-                                                                      %table{:border => "0", :cellpadding => "0", :cellspacing => "0", :width => "100%"}
-                                                                        %tr
-                                                                          %td{:align => "left"}
-                                                                            %a{:href => "deleteForm.html"} Previous page
-                                                                          %td{:align => "center"}
-                                                                            %a{:href => "glossary.html"} Return to top of page
-                                                                          /
-                                                                            <td align="right">
-                                                                            <a href="">Next page</A></td>
 
+%h2 Appendix A: Glossary
+#history-page
+  - ('A'..'Z').each do |letter|
+    %a{:href => "glossary.html##{letter}"} #{letter}
 
+%h2
+  %a{:name => "A"} A
+%dl
+  %dt
+    %a{:name => "ancestor"} Ancestor Node
+  %dd
+    An ancestor of a node is one that is a
+    = succeed "," do
+      %a{:href => "glossary.html#parent"} parent
+    grandparent,
+    great-grandparent, or a more removed grandparent.  See
+    = succeed "." do
+      %a{:href => "glossary.html#tree"} Trees
+
+%a{:name => "B"}/
+
+%h2
+  %a{:name => "C"} C
+%dl
+  %dt
+    %a{:name => "ccb"} CCB
+  %dd
+    The
+    %a{:href => "http://cns.montana.edu"} Center for Computational Biology
+    is located
+    at
+    = succeed "." do
+      %a{:href => "http://www.montana.edu"} Montana State University
+  %dt
+    %a{:name => "child"} Child Node
+  %dd
+    Nodes can have branches leading to other nodes, called child nodes.
+    See
+    %a{:href => "glossary.html#tree"} Tree
+    and
+    = succeed "." do
+      %a{:href => "glossary.html#parent"} Parent Node
+  %dt
+    %a{:name => "client"} Client
+  %dd
+    A computer that uses a network to make requests to a
+    = succeed "." do
+      %a{:href => "glossary.html#server"} server
+  %dt
+    %a{:name => "containerWidget"}
+    %b Container Widget
+  %dd
+    A widget that can have other widgets placed inside of it.
+
+%h2
+  %a{:name => "D"} D
+%dl
+  %dt
+    %a{:name => "descendant"}
+    %b Descendant Node
+  %dd
+    A descendant of a node is one that is a
+    = succeed "," do
+      %a{:href => "glossary.html#child"} child
+    grandchild,
+    great-grandchild or a more removed -grandchild.  See
+    = succeed "." do
+      %a{:href => "glossary.html#tree"} Trees
+
+%a{:name => "E"}/
+
+%h2
+  %a{:name => "F"} F
+%dl
+  %dt
+    %a{:name => "ftp"}
+    %b FTP
+  %dd
+    File Transfer Protocol. A very common method of moving files between two Internet sites.  There are many Internet sites that
+    have established publicly accessible repositories of material that can be obtained using FTP, by logging
+    in using the account name "anonymous", thus these sites are called "anonymous ftp servers".
+
+%h2
+  %a{:name => "G"} G
+%dl
+  %dt
+    %a{:name => "grayed"}
+    %b Grayed Out
+  %dd
+    Options that are unable to be selected or chosen.
+  %dt
+    %a{:name => "group"}
+    %b Group
+  %dd
+    Groups are the top level of the hierarchy used to organize data forms. Under
+    each group, the next level is the types of experiments performed in that particular group (lab).
+    The next level is the names of the researchers who have done experiments.
+
+%h2
+  %a{:name => "H"} H
+%dl
+  %dt
+    %a{:name => "host"}
+    %b Host
+  %dd
+    Any computer on a
+    %a{:href => "glossary.html#network"} network
+    that is a repository for services
+    available to other computers on the network. It is quite common to have one host machine provide
+    several services, such as SMTP (email) and HTTP (web).
+  %dt
+    %a{:name => "http"}
+    %b HTTP -
+    %a{:href => "glossary.html#hypertext"} HyperText Transfer Protocol
+  %dd
+    The protocol for moving hypertext files across the Internet. Requires an HTTP client program on one
+    end, and an HTTP server program on the other end. HTTP is the most important protocol used in the
+    World Wide Web (WWW).
+  %dt
+    %a{:name => "hypertext"}
+    %b Hypertext
+  %dd
+    Generally, any text that contains links to other documents - words or phrases in the document
+    that can be chosen by a reader and which cause another document to be retrieved and displayed.
+
+%a{:name => "I"}/
+
+%h2
+  %a{:name => "J"} J
+%dl
+  %dt
+    %a{:name => "jxta"}
+    %b JXTA
+  %dd
+    JXTA provides the
+    %a{:href => "glossary.html#protocol"} protocols
+    for basic functions
+    of peer-to-peer networking, such as creating, finding, joining, leaving	and monitoring groups,
+    talking to other groups and peers, and sharing content and services.
+
+%a{:name => "K"}/
+
+%h2
+  %a{:name => "L"} L
+%dl
+  %dt
+    %a{:name => "label"}
+    %b Label
+  %dd
+    A general word or name describing data.
+  %dt
+    %a{:name => "leaf"}
+    %b Leaf Node
+  %dd
+    Leaf nodes are
+    %a{:href => "glossary.html#tree"} tree
+    nodes that do not have branches.  Leaf
+    nodes cannot have
+    %a{:href => "glossary.html#child"} child
+    nodes.
+
+%h2
+  %a{:name => "M"} M
+%dl
+  %dt
+    %a{:name => "metadata"}
+    %b Meta-data
+  %dd
+    This is secondary data that describes primary data.  It answers questions about data.
+    Ex. The name of the person who took a barometric reading, where the barometric reading is
+    the primary data.
+  %dt
+    %a{:name => "mode"}
+    %b Mode
+  %dd
+    There are four modes of viewing that can
+    be utilized: Browse, Enter Data, Search, and Create Form. Modes are navigated between by selecting the
+    appropriate tab.  Each mode allows for different viewing options and user operations.
+
+%h2
+  %a{:name => "N"} N
+%dl
+  %dt
+    %a{:name => "node"}
+    %b Node
+  %dd
+    A node represents a piece of data in an organizational
+    = succeed "." do
+      %a{:href => "glossary.html#tree"} tree
+
+%a{:name => "O"}/
+
+%h2
+  %a{:name => "P"} P
+%dl
+  %dt
+    %a{:name => "parent"}
+    %b Parent Node
+  %dd
+    The parent of a
+    %a{:href => "glossary.html#child"} child
+    node, is the node that has a branch to a
+    leaf or child.  See
+    = succeed "." do
+      %a{:href => "glossary.html#tree"} Tree
+  %dt
+    %a{:name => "path"}
+    %b Path
+  %dd
+    The route to a folder or a file. It consists of the disk drive name, a folder and/or subfolder
+    (if any) and the filename. For example: c:/window/programs/fallderah.exe.
+  %dt
+    %a{:name => "protocol"}
+    %b Protocol
+  %dd
+    A specification that tells how computers will talk to each other. By standardizing protocols,
+    computers with different operating systems can communicate.
+  %dt
+    %a{:name => "popup"}
+    %b Pop-up
+  %dd
+    A small window that appears on top of another window.
+
+%h2
+  %a{:name => "Q"} Q
+%dl
+  %a{:name => "query"}
+    %b Query
+  %dd
+    A request sent to a database to retrieve information.  These requests can range from simple
+    searches to complicated cross correlations.
+
+%h2
+  %a{:name => "R"} R
+%dl
+  %dt
+    %a{:name => "relational"}
+    %b Relational Database
+  %dd
+    A database with tables that must be rigidly defined before the data can be entered, and whose
+    relationships among its records are based on common fields.
+  %dt
+    %a{:name => "root"}
+    %b Root Node
+  %dd
+    The root node is the
+    %a{:href => "glossary.html#tree"} tree
+    node that has no branches leading to it from other nodes.  A root has no
+    %a{:href => "glossary.html#parent"} parent
+    node.  The root is usually used as the label for whole tree.
+
+%h2
+  %a{:name => "S"} S
+%dl
+  %dt
+    %a{:name => "server"}
+    %b Server
+  %dd
+    A computer that handles requests from any
+    %a{:href => "glossary.html#client"} client
+    machines
+    on a network.  Clients can request web sites, data from databases, files, and mail.
+
+%h2
+  %a{:name => "T"} T
+%dl
+  %dt
+    %a{:name => "template"}
+    %b Template
+  %dd
+    A template is the master data form for a set of experiments. Specific data forms that
+    contain data are created by filling out templates.  Templates do not contain data, only
+    the organizational structure for the widgets that will be filled out during data collection.
+  %dt
+    %a{:name => "tree"}
+    %b Tree
+  %dd
+    A structure for organizing data that is composed of nodes and branches.  
+    Each node represents a piece of information.  Nodes can have branches 
+    leading to other nodes. One node is labeled the root node.  The
+    %a{:href => "glossary.html#root"} root
+    has no branches leading to it from other nodes.  The root is usually used 
+    as the label for whole tree.
+    %a{:href => "glossary.html#interior"}
+    %a{:href => "glossary.html#leaf"} Leaf
+    nodes are nodes that do not have branches.
+
+%h2
+  %a{:name => "U"} U
+%dl
+  %dt
+    %a{:name => "url"}
+    %b URL
+  %dd
+    A URL 
+    (
+    %b> U
+    niform&nbsp;
+    %b> R
+    esource&nbsp; 
+    %b> L
+    ocator) is the address of a computer or a document on the Internet that consists of a communications
+    protocol followed by a colon and two slashes (as http://), the identifier of a computer and usually a path
+    through a directory to a file -- called also uniform resource locator, universal resource locator.
+
+%a{:name => "V"}/
+
+%h2
+  %a{:name => "W"} W
+%dl
+  %dt
+    %a{:name => "widget"}
+    %b Widget
+  %dd
+    Widgets are the organizational elements used in data forms and are analogous to the
+    %a{:href => "glossary.html#node"} nodes
+    in an organizational
+    = succeed "." do
+      %a{:href => "glossary.html#tree"} tree
+    Users are allowed to add and delete widgets.  Since most data has a natural hierarchy 
+    of importance, widgets can be used as categories that contain other widgets.
+
+%h2
+  %a{:name => "X"} X
+%dl
+  %dt
+    %a{:name => "xml"}
+    %b XML
+  %dd
+    E
+    %b> x
+    tensible&nbsp;
+    %b> M
+    arkup&nbsp;
+    %b> L 
+    anguage is a flexible language for data that makes possible the
+    sharing of data between	systems and programs.
+  %dt
+    %a{:name => "xsil"}
+    %b XSIL
+  %dd
+    E
+    %b> x
+    tensible&nbsp;
+    %b> S
+    cientific&nbsp;
+    %b> I
+    nterchange&nbsp;
+    %b> L
+    anguage is the specific
+    %a{:href => "#xml"} XML
+    language used by the data forms.  The language was developed by the
+    = succeed "." do
+      %a{:href => "http://www.cacr.caltech.edu"}
+        California Institute
+        of Technology's Center for Advanced Computing Research
+    For more details read the
+    = succeed "." do
+      %a{:href => "http://www.cacr.caltech.edu/SDA/xsil/"}
+        XSIL: Extensible Scientific Interchange
+        Language
+
+%a{:name => "Y"}/
+%a{:name => "Z"}/
+
+#page-links
+  .previous
+    %a{:href => "deleteForm.html"} Previous page
+  .next
+    /%a{:href => "glossary.html"} Next page
+  .top
+    %a{:href => "glossary.html"} Return to top of page
