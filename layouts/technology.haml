@@ -1,0 +1,11 @@
+---
+layout: default
+filter: haml
+---
+#intro_y
+#left
+  = render :partial => "includes/relatedsites"
+  = render :partial => "includes/relatedtechnology"
+#right
+  = @content
+  %div{:style => "clear: both"}
