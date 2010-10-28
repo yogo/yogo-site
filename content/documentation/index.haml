@@ -7,7 +7,7 @@ menu_docs: lit
 ---
 #intro_h
 #left
-  %ul#leftmenu
+  %ul
     %li 
       %a{:href => "/documentation/history/index.html"}History of Yogo
     Applications Using Yogo API's:
@@ -19,12 +19,13 @@ menu_docs: lit
       %a{:href => "#Developer"}Developer Documentation
   = render :partial => "includes/support"
   = render :partial => "includes/contactus"
+
 #right
-%h2 Yogo Documentation
-%strong 
-  %a.anchor{:name => "Sapphire"}Sapphire Documentation
-  = render :partial => "includes/sapphiredocs"
-%br/
-%strong 
-  %a.anchor{:name => "Developer"}Developer Documentation
-  = render :partial => "includes/developerdocs"
+  %h2 Yogo Documentation
+  %strong 
+    %a.anchor{:name => "Sapphire"}Sapphire Documentation
+    = render :partial => "includes/sapphiredocs"
+  %br/
+  %strong 
+    %a.anchor{:name => "Developer"}Developer Documentation
+    = render :partial => "includes/developerdocs"
