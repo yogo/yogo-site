@@ -6,6 +6,7 @@ filter:     haml
 !!! Strict
 %html{:xmlns => "http://www.w3.org/1999/xhtml"}
   %head
+    %link{:rel => 'icon', :type => 'image/x-icon', :href => '/favicon.ico'}
     %meta{:content => "MSU CCB, adapted from Luka Cvrk (www.solucija.com)", :name => "author"}/
     %meta{:content => "text/html;charset=iso-8859-1", "http-equiv" => "content-type"}/
     %link{:href => "/css/style.css", :rel => "stylesheet", :type => "text/css"}/
@@ -18,22 +19,21 @@ filter:     haml
         %h1= "Yogo"
       %ul#menu
         %li
-          %a{:href => "/"} Home
+          %a{:href => "/", :class => @page.menu_home} Home
         %li
-          %a{:href => "/technology/index.html"} Technology
+          %a{:href => "/technology/index.html", :class => @page.menu_tech} Technology
         %li
-          %a{:href => "/applications/index.html"} Applications
+          %a{:href => "/applications/index.html", :class => @page.menu_apps} Applications
         %li
-          %a{:href => "/documentation/index.html"} Documentation
+          %a{:href => "/documentation/index.html", :class => @page.menu_docs} Documentation
         %li
-          %a{:href => "/about.html"} About
+          %a{:href => "/about.html", :class => @page.menu_about} About
       #body-content
         = @content
         %div{:style => "clear: both"}
       #footer
-        #col1
-        #col2
-        #col3
+        Page Info:
+        = @page.__send__(:_meta_data).to_a.join(',')
     :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
