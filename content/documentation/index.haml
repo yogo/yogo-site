@@ -2,10 +2,12 @@
 layout: default
 filter: haml
 title:  Documentation
+
+menu_docs: lit
 ---
 #intro_h
 #left
-  %ul#leftmenu
+  %ul
     %li 
       %a{:href => "/documentation/history/index.html"}History of Yogo
     Applications Using Yogo API's:
@@ -18,11 +20,11 @@ title:  Documentation
   = render :partial => "/fragments/support"
   = render :partial => "/fragments/contactus"
 #right
-%h2 Yogo Documentation
-%strong 
-  %a.anchor{:name => "Sapphire"}Sapphire Documentation
-  = render :partial => "includes/sapphiredocs"
-%br/
-%strong 
-  %a.anchor{:name => "Developer"}Developer Documentation
-  = render :partial => "includes/developerdocs"
+  %h2 Yogo Documentation
+  %strong 
+    %a.anchor{:name => "Sapphire"}Sapphire Documentation
+    = render :partial => "includes/sapphiredocs"
+  %br/
+  %strong 
+    %a.anchor{:name => "Developer"}Developer Documentation
+    = render :partial => "includes/developerdocs"
