@@ -1,0 +1,17 @@
+---
+filter: haml
+---
+%h3
+  %a{:name => "voeis"}The Virtual Observeratory and Ecological Informatics System (VOEIS)
+  
+%p
+  %a{:href => "/images/yogo/voeis-screenshot.png", :target => "_blank"}>
+    %img.left{:src => "/images/yogo/voeis-screenshot_thumb.png"}/
+  The Virtual Observatory and Ecological Informatics System (VOEIS) provides a framework for data acquisition, analysis, model integration, and display of data products from completed workflows including geo-spatially explicit models, graphs from statistical analyses, GIS displays of classified ecological attributes on the landscape, and 3-D visualization models of waterscape and landscape processes. At the core of the VOEIS is the VOEIS Data Hub, an application to enable coherent data management for data collected from streaming sensor networks, generated from laboratory experiments on samples taken in the field, and recorded from direct field observations. The VOEIS Data Hub is implemented using the YDMF and contributed significantly in three specific ways: 1) rigorous authentication and authorization requirements, 2) static data models, and 3) importing and exporting data to external data sources.
+%p
+  User authentication and fine-grained authorization was a significant requirement to our collaborators and the levels of granularity for data access was expansive -- down to permissions for individual data measurements.  The importance of this feature is due to the fact that no other system used within this community supports this granularity with the other set of features required of the VOEIS Data Hub.  This level of granularity proves important for users wishing to share subsets of data with collaborators without sharing entire projects and data-sets, but it not in the current YDMF.
+  %a{:href => "/images/yogo/voeis-project-overview.png", :target => "_blank"}>
+    %img.right{:src => "/images/yogo/voeis-project-overview_thumb.png"}/
+%p
+  The VOEIS Data Hub provides domain scientists with a data management application that has a single, managed data model for all the data collections. This is a constraint not common to all YDMF applications and simplified the application by reducing the number of data models that needed to be managed. Also, the single data model that was provided to each VOEIS Data Hub project was modifiable only by the application developers -- the end-users did not want it arbitrarily changed by other researchers. As this single data model evolved all projects gained the increased features and benefits of the new model components and interfaces at the same time, which provided a constancy across the user interface that was necessary for the end-users in the development of new protocol for interacting with data.
+    
