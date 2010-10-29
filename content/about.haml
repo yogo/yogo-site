@@ -5,10 +5,10 @@ title:    About
 ---
 #intro_c
 #left
-  = render :partial => "includes/about"
-  = render :partial => "includes/contactus"
+  = render :partial => "/fragments/about"
+  = render :partial => "/fragments/contactus"
 #right
-  = render :partial => "includes/team"
+  = render :partial => "/fragments/team"
   %h2
     %a.anchor{:name => "#collaborators"}Collaborators    
   %p These collaborators are working with different Yogo applications. They provide valuable user feedback, and are essential for the testing, extension and refinement of our software.
@@ -50,7 +50,7 @@ title:    About
       %span.affiliation, Transparency By Design
   %br
   %h2 
-    %a.anchor{:name => "#publications"}Publications
+    %a.anchor{:name => "#pubs"}Publications
   %strong Papers
   %ol
     %li	S. Pittendrigh and G. Jacobs, "Neurosys," Neuroinformatics, vol. 1, pp. 167-176, 2003.

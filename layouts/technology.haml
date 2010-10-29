@@ -5,7 +5,9 @@ filter: haml
 #intro_y
 #left
   The 
-  %a{:href => "/technology/index.html"}Yogo Framework
+  %strong
+    %a{:href => "/technology/index.html"}Yogo Framework
+
   contains:
   %ul
     %li
@@ -21,8 +23,9 @@ filter: haml
     %li
       %a{:href => "/technology/yogo-misc.html"}Yogo Miscellaneous
   %br
-  = render :partial => "includes/relatedsites"
-  = render :partial => "includes/relatedtechnology"
+  = render :partial => "/fragments/codeorganization"
+  = render :partial => "/fragments/relatedtechnology"
+  = render :partial => "/fragments/relatedsites"
 #right
   = @content
   %div{:style => "clear: both"}

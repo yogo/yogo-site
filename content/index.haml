@@ -4,11 +4,12 @@ filter: haml
 ---
 #intro
 #left
-  = render :partial => "includes/tryout"
-  = render :partial => "includes/download"
-  = render :partial => "includes/opensource"
-  %a{:href => "/About.html#Publications"} Our Publications!
-  = render :partial => "includes/contactus"
+  = render :partial => "/fragments/tryout"
+  = render :partial => "/fragments/download"
+  = render :partial => "/fragments/opensource"
+  %a{:href => "/about.html#pubs"} Our Publications!
+  %br/
+  = render :partial => "/fragments/contactus"
 #right
   %h2 What is Yogo?
   %br/
