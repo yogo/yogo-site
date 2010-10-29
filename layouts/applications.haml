@@ -2,9 +2,10 @@
 layout: default
 filter: haml
 ---
-#intro_m
+#intro.m
 #left
-  = render :partial => "/fragments/tryout"
+  = render :partial => "applications/menu"
+  = render :partial => "includes/tryout"
       
 #right
   = @content
