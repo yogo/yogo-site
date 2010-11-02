@@ -8,15 +8,18 @@ menu_home: lit
 #left
   = render :partial => "/fragments/opensource"
   = render :partial => "/fragments/download"
-  %a{:href => "/about.html#pubs"} Our Publications!
+  %h2 Publications
+  %p
+    Read about Yogo and related technologies in 
+    %a{:href => "/about.html#pubs"} Our Publications.
   =# render :partial => "/fragments/tryout"
   %br/
   = render :partial => "/fragments/contactus"
 #right
   %h2 What is Yogo?
-  %br/
-  %p The Yogo Data Management Framework is a set of software tools created to enhance the process of data annotation, analysis and web publication.
+  %p The Yogo Data Management Framework is a set of software tools created to rapidly build scientific data management applications.  These applications will enhance the process of data annotation, analysis and web publication.
   %p The system provides a set of easy to use software tools for data sharing by the scientific community. It enables researchers to build their own custom designed data management systems. Another branch of the system provides tools for viewing anatomical and physiological data.
-  %p
-    
-  %div{:style => "clear: both"}
+  %h2 Why Yogo?
+  %p The problem of scientific data management rests on several challenges.  These include flexible data storage, a way to share the stored data, tools to curate the data, and history of the data to show provenance. The Yogo Framework gives you the ability to build scientific data management applications that address all of these challenges.
+  %p For more information, see the #{link_to_page "Technology"} section where we go over the architecture of the system in detail.
+  
