@@ -4,6 +4,8 @@ extension: css
 filter: sass
 ---
 
+@import multi-line-button
+
 // *	author:   luka cvrk (www.solucija.com) 
 // *	adapted by: libbey white
 // *	
@@ -369,6 +371,19 @@ ul
 .note
   font-weight: bold
   font-style: italic
+  
+a.multi-line-button
+  +multi-line-button(#60a3d8)
+  .title
+    display: block
+    font-size: 20px
+    font-weight: bold
+    opacity: 0.9
+  .subtitle
+    display: block
+    font-size: 11px
+    margin-top: 4px
+    opacity: 0.7
 
 blockquote
   background-color: #EEEEEE
