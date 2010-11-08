@@ -1,0 +1,28 @@
+---
+filter: haml
+---
+%table
+  %tr
+    %td{:width => "12"}
+    %td
+      %img{:border => "1", :src => "/images/msu.jpg"}/
+%br
+%p 
+  The Yogo Data Management System was created at the 
+  %a{:href => "http://cns.montana.edu", :target => "_blank"}Center for Computational Biology,
+  %a{:href => "http://www.montana.edu", :target => "_blank"} Montana State University.
+#special
+  %p Support for the development of the Yogo Software was provided by:
+  %ul
+    %li.funding 
+      %a{:href => "http://www.nimh.nih.gov/index.shtml"}NIMH 
+      grant MH0441-07 
+      %br
+      PI: Gwen A. Jacobs
+      
+= render :partial => "/fragments/contactus"
+
+%h4
+  %a{:href => "/why_yogo.html"}Why the name Yogo?
+%h4
+  %a{:href => "/neurosys.html"}What about NeuroSys?
