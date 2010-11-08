@@ -2,7 +2,6 @@
 # set :repository,  "./output"
 # set :scm, :none
 # set :deploy_via, :copy
-set :deploy_to, "/var/www/yogo.msu.montana.edu"
 set :user,      "web_user"
 set :server_url, "optimus.msu.montana.edu"
 set :use_sudo,  false
@@ -23,3 +22,15 @@ namespace :deploy do
     puts "  * Skipping the restart task!"
   end
 end
+
+desc "Set production or development"
+task :set_environment do
+  set :srv_env, Capistrano::CLI.ui.ask("Deploy to [*1]development or [2]production: ")
+  case srv_env
+  when "1" then set :deploy_to, "/var/www/yogo-dev"
+  when "2" then set :deploy_to, "/var/www/yogo.msu.montana.edu"
+  else 
+    set :deploy_to, "/var/www/yogo-dev"
+  end
+end
+before "deploy", "set_environment"
