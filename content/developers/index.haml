@@ -7,15 +7,14 @@ menu_devs: lit
 ---
 #intro.h
 #left
-  %h3 Applications Using Yogo API's:
+
+
+  %h3 Applications Using Yogo APIs
   %ul
     %li 
       %a{:href => "/applications/mien/index.html"} MIEN
-    %li
-      %a{:href => "#Sapphire"} Sapphire Documentation
-    %li
-      %a{:href => "#Developer"} Developer Documentation
-
+  
+  %h3 History
   %ul
     %li 
       %a{:href => "/neurosys/index.html"} What is Neurosys?
@@ -24,11 +23,12 @@ menu_devs: lit
   = render :partial => "/fragments/support"
   = render :partial => "/fragments/contactus"
 #right
-  %h2 Yogo Documentation
-  %strong 
-    %a.anchor{:name => "Sapphire"}Sapphire Documentation
-    = render :partial => "includes/sapphiredocs"
-  %br/
-  %strong 
-    %a.anchor{:name => "Developer"}Developer Documentation
-    = render :partial => "includes/developerdocs"
+  %h2 Developer Info
+  
+  %h3 Getting Started with Yogo
+  %h4 Using Rails
+  %ol
+    %li Get the gems
+    %li Make an app
+    %li ...
+    %li Profit!
