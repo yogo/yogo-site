@@ -61,9 +61,12 @@ h4
   float: right
 
 img
-  &.left, &.right
-    border: 0px
-    margin: 5px
+  &.left
+    border: 0
+    margin: 5px 10px 5px 0
+  &.right
+    border: 0
+    margin: 5px 0 5px 10px
 
 #content
   width: 900px
@@ -152,7 +155,15 @@ img
   margin: 0 0 15px
   p
     margin: 0px
-    
+  h3
+    padding: 10px 0 0 0
+    margin: 0 0 5px 0
+  li 
+    list-style-type: none
+    text-align: left
+    padding-left: 2em
+    text-indent: -1em
+
 ul#leftmenu
   margin: 0 0 20px 0
   padding-left: 15px
@@ -167,7 +178,6 @@ ul#leftmenu
   margin: 0 15px 20px 0
   padding: 0 0 0 35px
   border-left: 1px solid #ccc
-  /*float: right;
   float: left
   width: 560px
   text-align: justify
@@ -187,18 +197,7 @@ ul#leftmenu
   background: #f4f4f4 url(../images/noticebg.gif) no-repeat bottom right
   border: 1px dotted #808080
 
-#left a, #right a
-  background: #EFFCFF
-  color: #317486
 
-#left
-  h3
-    padding: 10px 0 0 0
-    margin: 0 0 5px 0
-  li 
-    list-style-type: none
-    text-align: left
-    padding-left: 6px
 
 .anchor
   background: #FFF         !important
