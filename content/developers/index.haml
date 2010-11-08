@@ -24,11 +24,26 @@ menu_devs: lit
   = render :partial => "/fragments/contactus"
 #right
   %h2 Developer Info
+
+  %h3 Getting Started
+  %p The Yogo Framework code and documentation is still being developed, but you are encouraged to browse the source and give it a try.  Yogo should work with any Rack based Ruby framework, the most notable of which are Ruby on Rails and Sinatra.
+  %h3 The Source Code
+  %p The Yogo Framework is based around a single "meta-gem" that includes all of the other Yogo gems.  This means that one could use the framework sub-gems independently.  If a developer wanted to use the Yogo DB gem but not Yogo Project or Yogo Auth, this is possible.
+  %h3 Repositories
+  %ul
+    %li 
+      %a{:href => 'https://github.com/yogo/yogo-framework'} The Yogo Framework Meta Gem
+    %li
+      %a{:href => 'https://github.com/yogo/yogo-db'} The Yogo DB Gem
+    %li
+      %a{:href => 'https://github.com/yogo/yogo-project'} The Yogo Project Gem
+    %li The Yogo Auth gem is still being refactored from the base system code.
   
-  %h3 Getting Started with Yogo
-  %h4 Using Rails
-  %ol
-    %li Get the gems
-    %li Make an app
-    %li ...
-    %li Profit!
+  %h3 YARD Documentation
+  %ul
+    %li
+      %a{:href => 'http://rdoc.info/gems/yogo-framework/0.5.0/frames'} Yogo Framework Docs
+    %li
+      %a{:href => 'http://rdoc.info/gems/yogo-db/0.5.0/frames'} Yogo DB Docs
+    %li
+      %a{:href => 'http://rdoc.info/gems/yogo-project/0.5.0/frames'} Yogo Project Docs
