@@ -18,9 +18,69 @@ menu_faq: lit
   %h2
     %a.anchor{:name => "#faq"}Frequently Asked Questions
   %dl
+    %dt What is a Yogo Application?
+    %dd A Yogo Application is an application built using the Yogo Framework. 
+    %dt What is Yogo Sapphire?
+    %dd Yogo Sapphire is an example application that is being built using the Yogo Framework.  It is intended to be a showcase for the features of the Yogo Framework.  Yogo Sapphire is currently under development.
     %dt What is DataMapper? What is an ORM?
     %dd DataMapper is an Object Relational Mapper (ORM) written in the Ruby programming language.  The ORM is the layer that talks to the actual database - the interface between the ruby programming language and the database(SQLite, PostgreSQL, MySQL, etc.).  DataMapper understands how to translate the ruby model object operations (such as 'save' or 'delete') into the data-store specific SQL commands.  Yogo uses DataMapper to be database agnostic, and even allows Yogo to treat RESTful web services as data stores!
     %dt Why not just talk directly to the database instead of using an ORM?
     %dd One of the goals of Yogo is to connect to as many data stores as possible.  Using an ORM allows Yogo to do this without having to write different versions of the software for every data storage technology that you want to support.
+    %dt Can Yogo connect to multiple databases?
+    %dd Yes. Each Yogo Project is able to have its own data repository which may be in an entirely different database (or database technology).  For example, one project may have its data in a local MySQL database where another project might store its data in a remote PostgreSQL database. 
+    %dt What is a Document Database (also called a NOSQL Database)?
+    %dd A Document Database (DocDB) (synonymous with NOSQL database) is a database that stores schema-optional documents.  The strategies of different DocDBs vary widely.  However they are all similar in that they de-emphasize the relational characteristics of relational databases and emphasize ease of inserts and eventual consistency. The 'NOSQL' name for DocDBs are somewhat misleading as several of them have SQL-like languages for interacting with the data.
+    %dt What is Persevere?
+    %dd Persevere is a DocDB implemented in Java and providing a REST interface to its data.  
     %dt What is a Data Model?
-    %dd The Data Model is the description of the data container that will hold data.  Under the hood, the Data Model is actually a set of Yogo Operations that describe how to build the data container.  The Yogo Operations can be thought of as analogous to steps in a recipe.  By following the Yogo Operations that define a Data Model, Yogo is able to build the appropriate data storage for your data in any supported database.  
+    %dd The Data Model is the description of the data container that will hold data.  Under the hood, the Data Model is actually a set of Yogo Operations that describe how to build the data container.  The Yogo Operations can be thought of as analogous to steps in a recipe.  By following the Yogo Operations that define a Data Model, Yogo is able to build the appropriate data storage for your data in any supported database.
+    %dt What is a schema?
+    %dd A schema is a description of an item (or items) stored in a data collection.  A schema is generally a list of typed fields.  For example, the schema for a User might be: Name: String, Email: String, Age: Integer.  
+    %dt What is a Yogo Operation?
+    %dd A Yogo Operation is a component of the Yogo DB system that describes a modification to a data repository.  This might be the addition of a field, or setting the type of a field.  A Yogo Data Model is essentially a set of composable operations.  
+    %dt What is a composable operation?
+    %dd It is an increment of modification to the underlying data collection. Each operation describes a specific modification, such as adding a field or removing a field.  Composed together, they define a data model.
+    %dt What is the point of using composable operations?
+    %dd This allows Yogo to define the description of the data collection that is database agnostic.  The operations are given to DataMapper to process and modify the underlying database system accordingly.
+    %dt What does it mean that Yogo DB is a stack?
+    %dd Yogo DB is a collection of tools that work together to achieve the flexible functionality required for the Yogo Framework.  Yogo Support, Yogo Operation and Yogo DataMapper all work together to provide this.
+    %dt What does it mean that Yogo is versioned?
+    %dd All data items and models are versioned. This means that nothing is ever deleted. When a model or data item is updated, a new item is created and becomes the most relevant version.
+    %dt What is the difference between Authentication and Authorization?
+    %dd Authentication is the act of determining who a user is.  Authorization is the act of determining what that user is allowed to do.  Yogo can use local or remote authentication (such as LDAP), and uses Role Based Authorization to restrict user actions within the application.
+    %dt What are Role Based Authorization controls?
+    %dd These are granular controls that allow an administrator to designate access controls to specific roles.  For example, an application might have an Investigator role and a Lab Technician role.  An administrator can then grant permissions to each role to be able to create, read, update or delete records for the different projects and project models in the system.
+    %dt What is a Yogo Project?
+    %dd A Yogo Project is an organizational container in a Yogo Application.  It doesn't have to be called a "project", it could just as easily be called an Experiment, Trial or Set.  However, it does create a data repository specific to the project for storage of all of the project data.
+    %dt What is the difference between a project model and a global model?
+    %dd A project model contains data specific to that project.  Global models contain data that is relevant to many projects.  An example of a global model might be a controlled vocabulary of units that is used for all of the projects in the Yogo application.
+    %dt What is a Global Model?
+    %dd Global models contain data that is relevant to many projects.  An example of a global model might be a controlled vocabulary of units that is used for all of the projects in the Yogo application.
+    %dt What is a Project Model?
+    %dd A project model contains data specific to that one project.
+    %dt What is project data?
+    %dd Project data is data associated with a particular project's models. Also, data stored in a global model from within a project is saved into that project's repository.
+    %dt How many projects can I have?
+    %dd You can have as many projects as you have space for on your server.
+    %dt Where do the Project's models and data get stored?
+    %dd They get stored within the project's specific repository.
+    %dt Where are global models and model data stored?
+    %dd Data stored within the context of a project is always stored in the data repository associated with that project.  Global data is saved to a different defined data repository.  To the application, it all looks like the same merged repository.
+    %dt Do different projects store data in the same place?
+    %dd No.  Each project gets its own data repository.  If projects need to share data, that data should be in a global model.
+    %dt What does REST mean?
+    %dd REpresentational State Transfer. It is a commonly used application programming interface (API) for data sharing on the internet. See the Wikipedia page on REST for more information.
+    %dt What is an API?
+    %dd Application Programming Interface.  An API is a detailed set of instructions for how to use an application externally. With a defined API, an application on the internet can expose its data or functionality to other applications on the internet. 
+    %dt What is an API Key?
+    %dd Applications that use an API to provide data or functionality will oftentimes want to restrict that access.  Usernames and passwords are primarily used for human interaction, API Keys are used for programmatic interaction.  It is generally a long set of letters and numbers that the connection application can give to the server to enable API privileges.
+    %dt What is YAML and JSON?
+    %dd YAML (Yet Another Markup Language) and JSON (JavaScript Object Notation) are both data formats (such as XML or CSV).  JSON, like XML, is commonly used as a data interchange format on the internet.  
+    %dt How can I use Yogo in my lab?
+    %dd At moment this software is a framework for developers and available on github for them to create applications that use the technology.
+    %dt What is Ruby?
+    %dd Ruby is a high-level object-oriented programming language.
+    %dt What is Ruby on Rails?
+    %dd Ruby on Rails is a mature web application framework written in Ruby that follows the MVC (Model View Controller) design pattern.
+    %dt What is Sinatra?
+    %dd Sinatra is a light-weight web application framework written in Ruby. 

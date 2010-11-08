@@ -32,5 +32,6 @@ task :set_environment do
   else 
     set :deploy_to, "/var/www/yogo-dev"
   end
+  puts "Deploying output/ to #{deploy_to}."
 end
 before "deploy", "set_environment"
