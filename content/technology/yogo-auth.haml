@@ -5,6 +5,9 @@ filter: haml
 menu_tech: lit
 ---
 %h2 Yogo Authorization
+
+%img.left{:src => "/images/yogo/YDMF-auth.png"}
+
 %p
   The authorization system is a shim that fits into the RACK stack. It wraps the subject objects produced by the yogo-db module with a proxy object. The proxy object looks and acts just like the original object, except that it also verifies that the current user of the system is allowed to access the action on the object. This is known as the Facet pattern. If the current user is not allowed to access the action, an error is raised that can be handled at a different layer of the application.
 
@@ -15,4 +18,11 @@ menu_tech: lit
   Additionally, programmatic access to the data within and access is managed by the Yogo Auth Module. In order to allow users who are allowed to interact data to interact with it programmatically the YDMF supports security through application programmatic interface (API) keys which users provide when they make calls. These keys are unique and associated with users so the YDMF based application retrieves the user associated with the API key and continues to process the request just like it originated from the user interface.
 
 %p
-  At this point user management is left to the application. For examples, Crux has no users and therefore this system is not used. On the other hand VOEIS has a complex user system and a corresponding user management system to manage the various user and roles across many projects.
+  At this point user management is left to the application. For example, Crux has no users and therefore this system is not used. On the other hand VOEIS has a complex user system and a corresponding user management system to manage the various user and roles across many projects.
+  
+%img{:src => "/images/yogo/voeis-roles.png"}
+
+%p
+  This example of a System Roles dashboard is from the 
+  %a{:href => "http://voeis.msu.montana.edu"}Virtual Observatory and Ecological Informatics System (VOEIS) 
+  application that requires a robust set of authorization levels for adding and editing data.

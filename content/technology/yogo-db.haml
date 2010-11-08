@@ -6,5 +6,29 @@ menu_tech: lit
 ---
 %h2 Yogo Database
 
+%img.left{:src => "/images/yogo/YDMF-software-stack-db.png"}
+
 %p
   The yogo database module provides the most novel parts of the Yogo software, namely version-controlled, user-designed data types. These data types provide the foundation for building user-designed systems, and they are constructed through an intuitive web-based tool that will eventually be available for on-line or off-line use.
+
+%p 
+  The YDMF supports user defined, evolvable, versioned schemas by implementing a novel schema definition system.  The data stored in the system is also versioned to maintain provenance.  
+
+%img.right{:src => "/images/yogo/YDMF-schema-evolution.png"}
+
+%p 
+  The Yogo DB component allows the system to define a schema as a set of composable operations that can be grouped together. Groups of operations can be evaluated to produce the appropriate schema for the backend storage system in use. These sets of operations are versioned and because they are transformable operations they fit together and can be used to replay all schema operations performed in the Yogo DB sub-system. This allows rollback to any previous version of the schema.
+
+%p 
+  The YDMF is extremely flexible as Data Types, Columns and Tables are allowed to be dynamic. This flexibility allows developers to support multiple methods for the creation of data models such as: experimental protocols, simple form designs and spreadsheet upload.
+
+%p 
+  The YDMF allows a user to make changes to their schema(s) and then have those changes stored as a new version of the schema.  All data and data forms are updated to conform to the new schema without data loss.  For example, in the diagram above all users would gain an email property, and all forms would be updated to handle the new email field.
+
+%p 
+  When data is changed the previous version is not destroyed but kept and the updated item becomes the primary one used. Optionally, the system can require a user to annotate the update with a comment. This allows a user to roll-back to previous versions of data if an update is unwanted for whatever reason. Also this provides a path of provenance from an original starting datum to the final end datum product. This allows scientists to implicitly retain the provenance of their research with minimal effort.
+
+%img.right{:src => "/images/yogo/YDMF-data-versioning.png"}
+
+%p 
+  This versioning example shows how the YDMF handles the creation and updating of a User-Model record. When the record is first created the UpdatedAt and CreatedAt fields have the same date.  Whenever a record is changed, the previous record values are stored.  Data stored in the YogoDB is never deleted.

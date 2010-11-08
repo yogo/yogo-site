@@ -7,8 +7,6 @@ menu_tech: lit
 ---
 %h2 Technology that drives yogo
 
-%img{:src => "/images/yogo/YDMF-Diagram-simple.png"}
-
 %p 
   The Yogo software includes both a framework and an application, Sapphire, that provide the tools scientists need to do complex data management tasks. 
 
@@ -17,4 +15,24 @@ menu_tech: lit
 
 %p 
   The Yogo Data Management Framework is our implementation of dynamic, evolvable data schemas and the associated tools to make build secure, distributed, data management applications. Yogo is entirely new code, but it is based on the lessons learned from the previous implementation of our ideas, the NeuroSys Software. The lessons learned during writing, deploying and supporting the original software were critical to the successful design of the latest version. The new software has been divided into a set of modules (shown in the figure) that provide functionality that can't be found in other data management systems.
+
+%h2 The Yogo Data Management Framework
+
+%img.left{:src => "/images/yogo/YDMF-software-stack.png"}
+
+%p
+  The Yogo Data Management Framework (YDMF) is a set of software components that can be used to build a variety of data management applications. The core features of the YDMF are: user driven data modeling with evolvable, versioned schemas, data sharing, flexible project tools, RESTful API's and role based access controls. It provides advanced data management functionality that developers can leverage to provide end users the ability to manage their data without requiring a database administrator expertise.
+
+%p
+  The Yogo Data Management Framework includes all the components necessary for applications to provide robust, flexible data management features. The YDMF software stack contains:
+%ul
+  %li
+    Yogo DB is an implementation of a dynamic schema management tool.  Yogo DB uses operations (provided by the Yogo Operation module) to define the core of the dynamic data definition system.  With these features, the YDMF enables evolvable, versioned data storage.  Yogo Support provides a Ruby implementation of the required meta-programming patterns used to implement Yogo Operation.
+  %li
+    Yogo DataMapper is an set of enhancements and operations for the DataMapper object-relational-mapper.  DataMapper is a data-store agnostic interface between the Ruby programming language and the underlying data-store. 
+  %li
+    Yogo Project is a set of flexible tools to provide dynamic project models for applications. This allows project-specific models, and/or globally shared models.  The models can be restricted to allow users, administrators, or both to manage the data models.
+  %li
+    Yogo Auth: A rich set of authorization tools to allow applications to finely tune the roles and privileges of all users in the system. Yogo Auth implements Role-Based Authorization Controls (RBAC).
+  
 
