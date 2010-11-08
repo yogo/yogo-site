@@ -1,0 +1,26 @@
+---
+layout: default
+filter: haml
+title:  Frequently Asked Questions
+
+menu_faq: lit
+---
+#intro.h
+#left
+  %h3 For More Info
+  %ul
+    %li
+      %a{:href => '/about.html'} About Page
+    %li
+      %a{:href => '/developers'} Developers
+      
+#right
+  %h2
+    %a.anchor{:name => "#faq"}Frequently Asked Questions
+  %dl
+    %dt What is DataMapper? What is an ORM?
+    %dd DataMapper is an Object Relational Mapper (ORM) written in the Ruby programming language.  The ORM is the layer that talks to the actual database - the interface between the ruby programming language and the database(SQLite, PostgreSQL, MySQL, etc.).  DataMapper understands how to translate the ruby model object operations (such as 'save' or 'delete') into the data-store specific SQL commands.  Yogo uses DataMapper to be database agnostic, and even allows Yogo to treat RESTful web services as data stores!
+    %dt Why not just talk directly to the database instead of using an ORM?
+    %dd One of the goals of Yogo is to connect to as many data stores as possible.  Using an ORM allows Yogo to do this without having to write different versions of the software for every data storage technology that you want to support.
+    %dt What is a Data Model?
+    %dd The Data Model is the description of the data container that will hold data.  Under the hood, the Data Model is actually a set of Yogo Operations that describe how to build the data container.  The Yogo Operations can be thought of as analogous to steps in a recipe.  By following the Yogo Operations that define a Data Model, Yogo is able to build the appropriate data storage for your data in any supported database.  
