@@ -23,6 +23,24 @@ namespace :deploy do
   end
 end
 
+namespace :webby do
+  desc "Rebuild the site files"
+  task :rebuild do
+    'webby:clobber'
+    'webby:build'
+  end
+
+  task :clobber do
+    system 'webby clobber'
+  end
+  
+  desc "Build the site files"
+  task :build do
+    system 'webby'
+  end
+end
+before "deploy", "webby:rebuild"
+
 desc "Set production or development"
 task :set_environment do
   set :srv_env, Capistrano::CLI.ui.ask("Deploy to [*1]development or [2]production: ")
