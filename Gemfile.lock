@@ -12,7 +12,9 @@ GEM
     configuration (1.1.0)
     diff-lcs (1.1.2)
     directory_watcher (1.3.2)
-    haml (3.0.22)
+    haml (5.0.0)
+      temple (>= 0.8.0)
+      tilt
     highline (1.6.1)
     hpricot (0.8.2)
     launchy (0.3.7)
@@ -40,6 +42,8 @@ GEM
     rspec-mocks (2.0.1)
       rspec-core (~> 2.0.1)
       rspec-expectations (~> 2.0.1)
+    temple (0.8.2)
+    tilt (2.0.10)
     webby (0.9.4)
       directory_watcher (>= 1.1.2)
       hpricot (>= 0.6.0)
@@ -55,5 +59,5 @@ PLATFORMS
 DEPENDENCIES
   capistrano (~> 2.5.19)
   compass
-  haml (~> 3.0.21)
+  haml (~> 5.0.0)
   webby (~> 0.9.4)
